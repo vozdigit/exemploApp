@@ -1,0 +1,40 @@
+﻿    .parsley-errors-list li, ul, ol {
+        color: #FFE200 !important;
+        font-size: 11px !important;
+        padding-left: inherit;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 16px;
+        font-size: 13px;
+        line-height: 1.846;
+        border-radius: 3px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    a {
+        color: rgb(229, 255, 248);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #FFE200;
+    }

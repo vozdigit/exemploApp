@@ -1,0 +1,71 @@
+﻿@using Newtonsoft.Json;
+@using System.Linq;
+@using Tykon.Web.Helpers
+
+
+<style type="text/css">
+    .jqx-grid-cell-pinned {
+        background: none !important;
+    }
+
+    .jqx-grid-groups-header, .jqx-widget-header, .jqx-grid-content {
+        font-size: 12px !important;
+    }
+
+
+    #filtros {
+        display: block;
+    }
+
+    #tituloRelatorio {
+        display: none;
+    }
+
+    @@media print {
+        #filtros {
+            display: none;
+        }
+
+        .page-head {
+            display: none;
+        }
+    }
+</style>
+
+<h2 id="tituloRelatorio" class="page-title" style="padding-left:20px">@ViewBag.NomeFuncionalidade </h2>
+
+<div class="page-head">
+    <h2>
+        <i class="@ViewBag.IconeFuncionalidade fa-2x"></i><span style="margin-left:20px">@ViewBag.NomeFuncionalidade</span><i style="font-size:19px;margin-left:15px" class="fa fa-caret-right fa-1x"></i>
+        <small style="font-weight:300">Relatorio</small>
+    </h2>
+</div>
+
+<div class="main-content">
+
+    <div class="widget containerConteudo">
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <span class="title">Opções</span>
+                <div class="tools">
+                    
+                </div>
+            </div>
+
+            </div>
+
+            <div class="body" style="padding-left:10px;padding-bottom:10px">
+
+                @RenderBody()
+
+
+            </div>
+        </div>
+</div>
+
+
+   
+
+

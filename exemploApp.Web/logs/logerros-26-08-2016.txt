@@ -1,0 +1,288 @@
+ERROR 2016-08-26 00:36:09,300 52153ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao()
+ERROR 2016-08-26 00:36:20,187 63040ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao()
+ERROR 2016-08-26 00:38:43,939 206791ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao()
+ERROR 2016-08-26 00:42:44,988 30911ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 00:49:23,172 30426ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:29:58,838 42442ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:39:51,234 74017ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:42:36,973 239756ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:43:17,017 279800ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:43:41,249 304032ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:43:51,753 314536ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:44:13,694 336476ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:44:24,483 347266ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:45:45,765 428548ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:46:22,809 465591ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:46:30,736 473519ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:55:49,218 32917ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:55:56,296 39996ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:57:57,347 27892ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:58:07,757 38302ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:59:19,810 29870ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 01:59:29,981 40041ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 02:01:35,176 31222ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 02:01:44,261 40307ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 02:06:06,912 302958ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 02:06:22,987 319033ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 02:22:48,925 34681ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 02:22:55,969 41726ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 02:23:30,083 75840ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 02:36:10,077 835834ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 02:36:17,353 843109ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-26 03:02:59,362 193291ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264

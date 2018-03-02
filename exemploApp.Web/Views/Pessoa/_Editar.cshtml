@@ -1,0 +1,16 @@
+@model exemploApp.Dominio.Entidades.EntidadesPadrao.Pessoa
+
+@using Tykon.Web.Helpers
+@using Tykon.Web.Models;
+@using exemploApp.Dominio.Entidades.EntidadesControleSistema;
+@using System.Web.Mvc.Html;
+@using System.Linq
+
+
+@Html.HiddenFor(x => x.Id)
+@Html.HiddenFor(x => x.Telefones[0].Id)
+@Html.FWTextBoxGrupo(x => x.TipoPessoa, "Tipo Pessoa", true, FWTamanho.Cinco, "TipoPessoa", null, true)
+@Html.FWTextBoxGrupo(x => x.Telefones[0].NumeroTelefone, "Numero telefone", true, FWTamanho.Cinco, "NumeroTelefone", null, true)
+@Html.FWTextBoxGrupo(x => x.Telefones[0].DDD, "DDD", true, FWTamanho.Cinco, "DDD", null, true)
+@Html.FWTextBoxGrupo(x => x.Telefones[0].TipoTelefone, "DDD", true, FWTamanho.Cinco, "DDD", null, true)
+

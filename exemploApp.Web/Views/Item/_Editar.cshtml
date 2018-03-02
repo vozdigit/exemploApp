@@ -1,0 +1,44 @@
+@model exemploApp.Dominio.Entidades.EntidadesControleSistema.Item
+
+@using Tykon.Web.Helpers
+@using Tykon.Web.Models;
+@using exemploApp.Dominio.Entidades.EntidadesControleSistema;
+@using System.Web.Mvc.Html;
+@using System.Linq
+
+
+@Html.HiddenFor(x => x.Id)
+@Html.HiddenFor(x => x.Sistema.Id)
+@Html.HiddenFor(x => x.StatusItem)
+@Html.FWTextBoxGrupo(x => x.Sistema.NomeSistema, "Sistema", true, FWTamanho.Cinco, "NomeSistema", null, true)
+@Html.FWComboBoxGrupo(x => x.Menu.Modulo.Id, "Módulo", true, "Id", "NomeModulo", (System.Collections.IEnumerable)ViewBag.Modulos, false, FWTamanho.Cinco, "Modulo", "Selecione...",null, false, new { onchange = "SelecionaModulo()" })
+
+<div id="divMenus"></div>
+
+@Html.FWTextBoxGrupo(x => x.DescricaoItem, "Descrição do Item", true, FWTamanho.Cinco, "NomeItem", null, false)
+@Html.FWTextBoxGrupo(x => x.Controladoritem, "Controlador", true, FWTamanho.Cinco, "NomeItem", null, false)
+@Html.FWTextBoxGrupo(x => x.LogoItem, "Logo", true, FWTamanho.Cinco, "LogoItem", null, false)
+@Html.FWTextBoxGrupo(x => x.OrdemItem, "Posição", true, FWTamanho.Cinco, "OrdemItem", null, false, null, null, false, true)
+
+<script>
+
+    $(document).ready(function () {
+        SelecionaModulo();
+    });
+
+    function SelecionaModulo() {
+
+        var contentMenus = function () {
+            return $("#divMenus");
+        };
+
+        var idModulo = $("#Menu_Modulo_Id").val();
+        var idItem = $("#Id").val();
+
+        var parametros = { "idModulo": idModulo, "iditem": idItem };
+
+        principal.carregueConteudoComPost("@Url.Action("CarregarMenus")", contentMenus, parametros);
+    }
+
+
+</script>

@@ -1,0 +1,168 @@
+ERROR 2016-08-14 20:10:29,133 177501ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-14 20:12:45,281 313649ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.NonUniqueObjectException: a different object with the same identifier value was already associated with the session: 0, of entity: TESTE.Dominio.Entidades.EntidadesPadrao.Telefone
+   em NHibernate.Engine.StatefulPersistenceContext.CheckUniqueness(EntityKey key, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\StatefulPersistenceContext.cs:linha 694
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 264
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeCollectionElements(Object parent, Object child, CollectionType collectionType, CascadeStyle style, IType elemType, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 239
+   em NHibernate.Engine.Cascade.CascadeCollection(Object parent, Object child, CascadeStyle style, Object anything, CollectionType type) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 203
+   em NHibernate.Engine.Cascade.CascadeAssociation(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 187
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeAfterSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 379
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 295
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em TESTE.Web.Controllers.UsuarioSistemaController.PreparaObjetoAdicao(UsuarioSistema usuarioSistema) na D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\Controllers\UsuarioSistemaController.cs:linha 118
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass15_0.<SalvarPadrao>b__0() na D:\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 269
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-08-14 20:14:52,206 440574ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-08-14 20:16:57,594 565962ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.NonUniqueObjectException: a different object with the same identifier value was already associated with the session: 0, of entity: TESTE.Dominio.Entidades.EntidadesPadrao.Telefone
+   em NHibernate.Engine.StatefulPersistenceContext.CheckUniqueness(EntityKey key, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\StatefulPersistenceContext.cs:linha 694
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 264
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeCollectionElements(Object parent, Object child, CollectionType collectionType, CascadeStyle style, IType elemType, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 239
+   em NHibernate.Engine.Cascade.CascadeCollection(Object parent, Object child, CascadeStyle style, Object anything, CollectionType type) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 203
+   em NHibernate.Engine.Cascade.CascadeAssociation(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 187
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeAfterSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 379
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 295
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em TESTE.Web.Controllers.UsuarioSistemaController.PreparaObjetoAdicao(UsuarioSistema usuarioSistema) na D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\Controllers\UsuarioSistemaController.cs:linha 118
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass15_0.<SalvarPadrao>b__0() na D:\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 269
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-08-14 20:17:37,026 605394ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.NonUniqueObjectException: a different object with the same identifier value was already associated with the session: 0, of entity: TESTE.Dominio.Entidades.EntidadesPadrao.Telefone
+   em NHibernate.Engine.StatefulPersistenceContext.CheckUniqueness(EntityKey key, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\StatefulPersistenceContext.cs:linha 694
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 264
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeCollectionElements(Object parent, Object child, CollectionType collectionType, CascadeStyle style, IType elemType, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 239
+   em NHibernate.Engine.Cascade.CascadeCollection(Object parent, Object child, CascadeStyle style, Object anything, CollectionType type) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 203
+   em NHibernate.Engine.Cascade.CascadeAssociation(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 187
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeAfterSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 379
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 295
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em TESTE.Web.Controllers.UsuarioSistemaController.PreparaObjetoAdicao(UsuarioSistema usuarioSistema) na D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\Controllers\UsuarioSistemaController.cs:linha 118
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass15_0.<SalvarPadrao>b__0() na D:\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 269
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-08-14 20:17:53,313 621681ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.NonUniqueObjectException: a different object with the same identifier value was already associated with the session: 0, of entity: TESTE.Dominio.Entidades.EntidadesPadrao.Telefone
+   em NHibernate.Engine.StatefulPersistenceContext.CheckUniqueness(EntityKey key, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\StatefulPersistenceContext.cs:linha 694
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 264
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeCollectionElements(Object parent, Object child, CollectionType collectionType, CascadeStyle style, IType elemType, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 239
+   em NHibernate.Engine.Cascade.CascadeCollection(Object parent, Object child, CascadeStyle style, Object anything, CollectionType type) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 203
+   em NHibernate.Engine.Cascade.CascadeAssociation(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 187
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeAfterSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 379
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 295
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em TESTE.Web.Controllers.UsuarioSistemaController.PreparaObjetoAdicao(UsuarioSistema usuarioSistema) na D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\Controllers\UsuarioSistemaController.cs:linha 118
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass15_0.<SalvarPadrao>b__0() na D:\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 269
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-08-14 20:18:05,688 634056ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.NonUniqueObjectException: a different object with the same identifier value was already associated with the session: 0, of entity: TESTE.Dominio.Entidades.EntidadesPadrao.Telefone
+   em NHibernate.Engine.StatefulPersistenceContext.CheckUniqueness(EntityKey key, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\StatefulPersistenceContext.cs:linha 694
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 264
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeCollectionElements(Object parent, Object child, CollectionType collectionType, CascadeStyle style, IType elemType, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 239
+   em NHibernate.Engine.Cascade.CascadeCollection(Object parent, Object child, CascadeStyle style, Object anything, CollectionType type) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 203
+   em NHibernate.Engine.Cascade.CascadeAssociation(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 187
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeAfterSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 379
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 295
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em TESTE.Web.Controllers.UsuarioSistemaController.PreparaObjetoAdicao(UsuarioSistema usuarioSistema) na D:\VOZDIGITAL\TESTE\trunk\TESTE.Web\Controllers\UsuarioSistemaController.cs:linha 118
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass15_0.<SalvarPadrao>b__0() na D:\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 269
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106

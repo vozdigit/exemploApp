@@ -1,0 +1,202 @@
+ERROR 2018-02-17 22:39:42,952 59467ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-17 22:55:57,728 56801ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-17 23:37:53,404 35403ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-17 23:59:27,690 45208ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-17 23:04:57,467 98722ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-17 23:16:02,692 44451ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-17 23:16:36,995 78753ms AbstractBatcher        Error              - Could not execute query: select usuEnt.ID_ENTIDADE_ADM IdEntidadeAdm, ind.ID_INDICADOR IdIndicador, ind.NOME_INDICADOR NomeIndicador, sub.ID_SUBGRUPO_INDICADOR IdSubIndicador, sub.DESC_SUBGRUPO_INDICADOR NomeSubIndicador, min(regMov.DATA_MOVIMENTO) DataInicioPreenchimento from cosmoss.USUARIO usu 
+inner join cosmoss.USUARIO_SUBGRUPO usuSub on usu.ID_USUARIO = usuSub.ID_USUARIO 
+inner join cosmoss.SUBGRUPO_INDICADOR sub on usuSub.ID_SUBGRUPO_INDICADOR = sub.ID_SUBGRUPO_INDICADOR 
+inner join cosmoss.INDICADOR ind on ind.ID_INDICADOR = sub.ID_INDICADOR 
+inner join cosmoss.USUARIO_ENTIDADE usuEnt on usu.ID_USUARIO = usuEnt.ID_USUARIO 
+inner join cosmoss.ENTIDADE_ADM_SUBGRUPO_INDICADOR entSub on usuSub.ID_SUBGRUPO_INDICADOR = entSub.ID_SUBGRUPO_INDICADOR 
+inner join cosmoss.REGISTRO_MOVIMENTO regMov on regMov.ID_SUBGRUPO_INDICADOR = sub.ID_SUBGRUPO_INDICADOR 
+where usu.ID_USUARIO = @p0 
+and usuEnt.ID_ENTIDADE_ADM = @p1 
+and regMov.VLR_MOVIMENTO > 0 
+group by ind.ID_INDICADOR, ind.NOME_INDICADOR, sub.ID_SUBGRUPO_INDICADOR, sub.DESC_SUBGRUPO_INDICADOR 
+order by ind.ID_INDICADOR, ind.NOME_INDICADOR, sub.ID_SUBGRUPO_INDICADOR, sub.DESC_SUBGRUPO_INDICADOR
+System.Data.SqlClient.SqlException (0x80131904): Column 'cosmoss.USUARIO_ENTIDADE.ID_ENTIDADE_ADM' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 222
+ClientConnectionId:ac5b6fc5-13e8-4279-8ed4-d6528cd10b7c
+Error Number:8120,State:1,Class:16
+ERROR 2018-02-17 23:16:37,051 78809ms ADOExceptionReporter   Error              - Column 'cosmoss.USUARIO_ENTIDADE.ID_ENTIDADE_ADM' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+ERROR 2018-02-17 23:16:37,061 78819ms ADOExceptionReporter   Error              - Column 'cosmoss.USUARIO_ENTIDADE.ID_ENTIDADE_ADM' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+ERROR 2018-02-17 23:16:37,066 78824ms ADOExceptionReporter   Error              - Column 'cosmoss.USUARIO_ENTIDADE.ID_ENTIDADE_ADM' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+ERROR 2018-02-17 23:17:08,408 110167ms AbstractBatcher        Error              - Could not execute query: select usuEnt.ID_ENTIDADE_ADM IdEntidadeAdm, ind.ID_INDICADOR IdIndicador, ind.NOME_INDICADOR NomeIndicador, sub.ID_SUBGRUPO_INDICADOR IdSubIndicador, sub.DESC_SUBGRUPO_INDICADOR NomeSubIndicador, min(regMov.DATA_MOVIMENTO) DataInicioPreenchimento from cosmoss.USUARIO usu 
+inner join cosmoss.USUARIO_SUBGRUPO usuSub on usu.ID_USUARIO = usuSub.ID_USUARIO 
+inner join cosmoss.SUBGRUPO_INDICADOR sub on usuSub.ID_SUBGRUPO_INDICADOR = sub.ID_SUBGRUPO_INDICADOR 
+inner join cosmoss.INDICADOR ind on ind.ID_INDICADOR = sub.ID_INDICADOR 
+inner join cosmoss.USUARIO_ENTIDADE usuEnt on usu.ID_USUARIO = usuEnt.ID_USUARIO 
+inner join cosmoss.ENTIDADE_ADM_SUBGRUPO_INDICADOR entSub on usuSub.ID_SUBGRUPO_INDICADOR = entSub.ID_SUBGRUPO_INDICADOR 
+inner join cosmoss.REGISTRO_MOVIMENTO regMov on regMov.ID_SUBGRUPO_INDICADOR = sub.ID_SUBGRUPO_INDICADOR 
+where usu.ID_USUARIO = @p0 
+and usuEnt.ID_ENTIDADE_ADM = @p1 
+and regMov.VLR_MOVIMENTO > 0 
+group by ind.ID_INDICADOR, ind.NOME_INDICADOR, sub.ID_SUBGRUPO_INDICADOR, sub.DESC_SUBGRUPO_INDICADOR 
+order by ind.ID_INDICADOR, ind.NOME_INDICADOR, sub.ID_SUBGRUPO_INDICADOR, sub.DESC_SUBGRUPO_INDICADOR
+System.Data.SqlClient.SqlException (0x80131904): Column 'cosmoss.USUARIO_ENTIDADE.ID_ENTIDADE_ADM' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 222
+ClientConnectionId:d48e332c-c93c-4088-b73c-ef1333b59afb
+Error Number:8120,State:1,Class:16
+ERROR 2018-02-17 23:17:08,411 110170ms ADOExceptionReporter   Error              - Column 'cosmoss.USUARIO_ENTIDADE.ID_ENTIDADE_ADM' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+ERROR 2018-02-17 23:17:08,414 110172ms ADOExceptionReporter   Error              - Column 'cosmoss.USUARIO_ENTIDADE.ID_ENTIDADE_ADM' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+ERROR 2018-02-17 23:17:08,422 110181ms ADOExceptionReporter   Error              - Column 'cosmoss.USUARIO_ENTIDADE.ID_ENTIDADE_ADM' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+ERROR 2018-02-17 23:18:30,596 44920ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-18 14:41:26,604 64975ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-18 15:32:07,537 233138ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-18 15:59:31,398 22078ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-18 16:32:33,809 20712ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-18 16:39:28,302 435205ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-18 16:42:48,354 68243ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-18 16:47:35,390 62114ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-18 17:08:59,617 92276ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2018-02-18 17:12:08,401 38694ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264

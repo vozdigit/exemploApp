@@ -1,0 +1,88 @@
+﻿@using Newtonsoft.Json;
+@using System.Linq;
+@using Tykon.Web.Helpers
+
+<style type="text/css">
+    #filtros {
+        display: block;
+    }
+
+    #tituloRelatorio {
+        display: none;
+    }
+     
+    #body {     
+            margin: 25mm 25mm 25mm 25mm;  
+      } 
+
+    @@media print {
+        #filtros {
+            display: none;
+        }
+
+        .panel-heading {
+            display: none;
+        }
+
+         .page-title {
+            display: none;
+        }       
+
+       .page-head {
+            display: none;
+        } 
+
+        .page-head {
+            display: none;
+        } 
+
+        .sidebar-elements {
+            display: none;
+        }
+
+        .container-fluid {
+            display: none;
+        }
+
+       .btn {
+            display: none;
+        }
+
+       .form-group {
+            display: none;
+        }  
+
+       .app-top-dropdown {
+           display: none;
+       }       
+    }
+</style>
+
+
+
+<div class="main-content">
+
+    <div class="widget containerConteudo">
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading">              
+                <div class="tools">                    
+                    <a href="javascript:;" class="btn btn-secondary" onclick="window.print(); return false;">Imprimir</a>
+                </div>
+            </div>
+
+        </div>
+
+            <div class="body" style="padding-left:10px;padding-bottom:10px">
+                @RenderBody()
+            </div>
+        </div>
+</div>
+
+@Styles.Render("~/Content/estilosrelatorio?v15")
+    <script>
+        $(document).ready(function () {
+            App.init();
+        });
+    </script>

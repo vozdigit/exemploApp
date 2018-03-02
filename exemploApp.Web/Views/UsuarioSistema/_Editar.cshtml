@@ -1,0 +1,318 @@
+@model exemploApp.Dominio.Entidades.EntidadesControleSistema.UsuarioSistema
+
+@using Tykon.Web.Helpers
+@using Tykon.Web.Models;
+@using exemploApp.Dominio.Entidades.EntidadesControleSistema;
+@using System.Web.Mvc.Html;
+@using System.Linq
+
+<div class="tab-container">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#DadosUsuario" data-toggle="tab">Dados do Usuário</a></li>
+        <li><a href="#Perfis" data-toggle="tab">Perfis Associados</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="DadosUsuario" class="tab-pane active cont">
+
+            <div class="form-horizontal">
+                @Html.HiddenFor(x => x.Id)
+                @Html.HiddenFor(x => x.PessoaFisica.Id)
+                @Html.HiddenFor(x => x.PessoaFisica.Pessoa.Id)
+                @Html.HiddenFor(x => x.PessoaFisica.Pessoa.TipoPessoa)
+
+                <fieldset>
+                    <legend class="panel-title">Informações Básicas</legend>
+                    <br />
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="NomePessoa">Nome</label>
+                        <div class="col-md-5">
+                            @Html.FWTextBox(x => x.PessoaFisica.NomePessoa, true, "NomePessoa", null, new { maxlength = "50" })
+                        </div>
+                        <label class="control-label col-md-2" for="DtNascimento">Data de Nascimento</label>
+                        <div class="col-md-2">
+                            @Html.FWTextBox(x => x.PessoaFisica.DtNascimento, true, "DtNascimento", null, new { maxlength = "10" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="CPFLiteral">CPF</label>
+                        <div class="col-md-2">
+                            @Html.FWTextBox(x => x.PessoaFisica.CPFLiteral, true, "CPFLiteral", null)
+                        </div>
+                        <label class="control-label col-md-1" for="NumeroRG">RG</label>
+                        <div class="col-md-2">
+                            @Html.FWTextBox(x => x.PessoaFisica.NumeroRG, true, "NumeroRG", null, new { maxlength = "20" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="Sexo">Sexo</label>
+                        <div class="col-md-2">
+                            @Html.FWComboBox(x => x.PessoaFisica.Sexo, (System.Collections.IEnumerable)ViewBag.Sexo, "Chave", "Nome", false, true, "Sexo", null, "Selecione...", null, false, null)
+                        </div>
+                        <label class="control-label col-md-1" for="EstadoCivil">Estado Civíl</label>
+                        <div class="col-md-2">
+                            @Html.FWComboBox(x => x.PessoaFisica.EstadoCivil, (System.Collections.IEnumerable)ViewBag.EstadoCivil, "Chave", "Nome", false, true, "EstadoCivil", null, "Selecione...", null, false, null)
+                        </div>
+                        <label class="control-label col-md-2" for="Nacionalidade">Nacionalidade</label>
+                        <div class="col-md-2">
+                            @Html.FWTextBox(x => x.PessoaFisica.Nacionalidade, false, "Nacionalidade", null, new { maxlength = "50" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="Naturalidade">Naturalidade</label>
+                        <div class="col-md-5">
+                            @Html.FWTextBox(x => x.PessoaFisica.Naturalidade, false, "Naturalidade", null, new { maxlength = "50" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="Email">Email principal</label>
+                        <div class="col-md-5">
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.EnderecosEletronicos[0].Id)
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.EnderecosEletronicos[0].Pessoa.Id)
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.EnderecosEletronicos[0].TipoEnderecoEletronico)
+                            @Html.FWTextBox(x => x.PessoaFisica.Pessoa.EnderecosEletronicos[0].Endereco, true, "Email", null, new { maxlength = "50" })
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <br />
+
+                <fieldset>
+                    <legend class="panel-title">Endereço e Telefone</legend>
+                    @Html.HiddenFor(x => x.PessoaFisica.Pessoa.EnderecosFisicos[0].Id)
+                    @Html.HiddenFor(x => x.PessoaFisica.Pessoa.EnderecosFisicos[0].Pessoa.Id)
+                    @Html.HiddenFor(x => x.PessoaFisica.Pessoa.EnderecosFisicos[0].TipoEndereco)
+                    <br />
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="Logradouro">Logradouro</label>
+                        <div class="col-md-5">
+                            @Html.FWTextBox(x => x.PessoaFisica.Pessoa.EnderecosFisicos[0].Logradouro, true, "Logradouro", null, new { maxlength = "100" })
+                        </div>
+
+                        <label class="control-label col-md-2" for="Numero">Número</label>
+                        <div class="col-md-2">
+                            @Html.FWTextBox(x => x.PessoaFisica.Pessoa.EnderecosFisicos[0].Numero, false, "Numero", null, new { maxlength = "10" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="Complemento">Complemento</label>
+                        <div class="col-md-5">
+                            @Html.FWTextBox(x => x.PessoaFisica.Pessoa.EnderecosFisicos[0].Complemento, false, "Complemento", null, new { maxlength = "50" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="NomeBairro">Bairro / Setor</label>
+                        <div class="col-md-5">
+                            @Html.FWTextBox(x => x.PessoaFisica.Pessoa.EnderecosFisicos[0].NomeBairro, true, "NomeBairro", null, new { maxlength = "50" })
+                        </div>
+
+                        <label class="control-label col-md-2" for="NumeroCEP">CEP</label>
+                        <div class="col-md-2">
+                            @Html.FWTextBox(x => x.PessoaFisica.Pessoa.EnderecosFisicos[0].CEPLiteral, true, "NumeroCEP", null)
+                        </div>
+
+                    </div>
+
+
+                    @Html.HiddenFor(x => x.PessoaFisica.Pessoa.EnderecosFisicos[0].Municipio.Id)
+                    @Html.FWPesquisa(x => x.PessoaFisica.Pessoa.EnderecosFisicos[0].Municipio.NomeMunicipio, "Municipio", "Pesquisa de Municípios", Url.Action("PreparaGridMunicipios"), "_FiltroPesquisaMunicipios", "telaEdicao.callBackPesquisaMunicipio", "telaEdicao.callBackCancelarMunicipio", true, "Pesquisar", "pesquisaMunicipio", "NomeMunicipio", FWTamanho.Cinco)
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="NumeroCPF">Telefone Residencial</label>
+                        <div class="col-md-2">
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.Telefones[0].Id)
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.Telefones[0].Pessoa.Id)
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.Telefones[0].TipoTelefone)
+                            @Html.FWTextBox(x => x.PessoaFisica.Pessoa.Telefones[0].NmroTelefoneCompleto, true, "NmroTelefoneCompleto", null)
+                        </div>
+                        <label class="control-label col-md-1" for="NumeroRG">Celular</label>
+                        <div class="col-md-2">
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.Telefones[1].Id)
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.Telefones[1].Pessoa.Id)
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.Telefones[1].TipoTelefone)
+                            @Html.FWTextBox(x => x.PessoaFisica.Pessoa.Telefones[1].NmroTelefoneCompleto, true, "NmroTelefoneCompleto", null)
+                        </div>
+                        <label class="control-label col-md-2" for="Nacionalidade">Telefone Comercial</label>
+                        <div class="col-md-2">
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.Telefones[2].Id)
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.Telefones[2].Pessoa.Id)
+                            @Html.HiddenFor(x => x.PessoaFisica.Pessoa.Telefones[2].TipoTelefone)
+                            @Html.FWTextBox(x => x.PessoaFisica.Pessoa.Telefones[2].NmroTelefoneCompleto, false, "NmroTelefoneCompleto", null)
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <br />
+
+                <fieldset>
+                    <legend class="panel-title">Dados para autenticação</legend>
+                    <br />
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="Login">Login / Username</label>
+                        <div class="col-md-2">
+                            @Html.FWTextBox(x => x.Login, true, "Login", null, new { maxlength = "15" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="Senha">Senha de Acesso</label>
+                        <div class="col-md-2">
+                            @Html.FWTextBox(x => x.Credenciais[0].Senha, true, "Senha", null, new { maxlength = "50", @type = "password" })
+                        </div>
+                    </div>
+</fieldset>
+
+</div>
+
+            @Html.HiddenFor(x => x.Credenciais[0].Id)
+            @Html.HiddenFor(x => x.Credenciais[0].DtStatusCredencial)
+        </div>
+        <div id="Perfis" class="tab-pane cont">
+
+            <fieldset>
+                <legend class="panel-title">Lista de Perfis</legend>
+                <br/>
+
+                @for (int i = 0; i < Model.PerfisAssociadosAoUsuario.Count(); i++)
+            {
+                    <div class="form-group">
+                        <label class="control-label col-md-2">@Model.PerfisAssociadosAoUsuario[i].Perfil.NomePerfil</label>
+                        <div class=" col-md-1">
+                            @Html.CheckBoxFor(x => x.PerfisAssociadosAoUsuario[i].Associado, null)
+                        </div>
+                    </div>
+
+                    @Html.HiddenFor(x => x.PerfisAssociadosAoUsuario[i].Id)
+                    @Html.HiddenFor(x => x.PerfisAssociadosAoUsuario[i].UsuarioSistema.Id)
+                    @Html.HiddenFor(x => x.PerfisAssociadosAoUsuario[i].Perfil.Id)
+                }
+
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#PessoaFisica_DtNascimento").mask("99/99/9999");
+        $("#PessoaFisica_CPFLiteral").mask("999.999.999-99")
+        $("#PessoaFisica_Pessoa_EnderecosFisicos_0__CEPLiteral").mask("99999-999")
+
+        var phone_0, element_0;
+        element_0 = $("#PessoaFisica_Pessoa_Telefones_0__NmroTelefoneCompleto");
+        element_0.unmask();
+        phone_0 = element_0.val().replace(/\D/g, '');
+        if (phone_0.length > 10) {
+            element_0.mask("(99) 99999-999?9");
+        } else {
+            element_0.mask("(99) 9999-9999?9");
+        }
+
+        var phone_1, element_1;
+        element_1 = $("#PessoaFisica_Pessoa_Telefones_1__NmroTelefoneCompleto");
+        element_1.unmask();
+        phone_1 = element_1.val().replace(/\D/g, '');
+        if (phone_1.length > 10) {
+            element_1.mask("(99) 99999-999?9");
+        } else {
+            element_1.mask("(99) 9999-9999?9");
+        }
+
+        var phone_2, element_2;
+        element_2 = $("#PessoaFisica_Pessoa_Telefones_2__NmroTelefoneCompleto");
+        element_2.unmask();
+        phone_2 = element_2.val().replace(/\D/g, '');
+        if (phone_2.length > 10) {
+            element_2.mask("(99) 99999-999?9");
+        } else {
+            element_2.mask("(99) 9999-9999?9");
+        }
+
+        $('#PessoaFisica_Pessoa_Telefones_0__NmroTelefoneCompleto').focusout(function () {
+            var phone, element;
+            element = $("#PessoaFisica_Pessoa_Telefones_0__NmroTelefoneCompleto");
+            element.unmask();
+            phone = element.val().replace(/\D/g, '');
+            if (phone.length > 10) {
+                element.mask("(99) 99999-999?9");
+            } else {
+                element.mask("(99) 9999-9999?9");
+            }
+        });
+
+        $('#PessoaFisica_Pessoa_Telefones_1__NmroTelefoneCompleto').focusout(function () {
+            var phone, element;
+            element = $("#PessoaFisica_Pessoa_Telefones_1__NmroTelefoneCompleto");
+            element.unmask();
+            phone = element.val().replace(/\D/g, '');
+            if (phone.length > 10) {
+                element.mask("(99) 99999-999?9");
+            } else {
+                element.mask("(99) 9999-9999?9");
+            }
+        });
+
+        $('#PessoaFisica_Pessoa_Telefones_2__NmroTelefoneCompleto').focusout(function () {
+            var phone, element;
+            element = $("#PessoaFisica_Pessoa_Telefones_2__NmroTelefoneCompleto");
+            element.unmask();
+            phone = element.val().replace(/\D/g, '');
+            if (phone.length > 10) {
+                element.mask("(99) 99999-999?9");
+            } else {
+                element.mask("(99) 9999-9999?9");
+            }
+        });
+
+        var options = {
+            onText: "Sim",
+            offText: "Não",
+            animate: true,
+            size: "mini",
+        };
+
+        $('input:checkbox').bootstrapSwitch(options);
+    })
+
+    var telaEdicao = function () {
+
+        var _exibaLoad = function () {
+            $("#content").block();
+        };
+
+        var _removeLoad = function () {
+            $("#content").unblock();
+        };
+
+        var callBackPesquisaMunicipio = function (item) {
+
+            if (item != undefined && item != null) {
+                pesquisaMunicipio.defineTexto(item.Id);
+
+                $("#PessoaFisica_Pessoa_EnderecosFisicos_0__Municipio_Id").val(item.Id);
+                $('#divpesquisaMunicipio').children('#ValorExibicao').val(item.NomeMunicipio + ' - ' + item.SiglaUF);
+            } else {
+
+                callBackCancelarMunicipio();
+            }
+        };
+
+        var callBackCancelarMunicipio = function () {
+            pesquisaMunicipio.defineTexto(null);
+        };
+
+        return {
+            callBackPesquisaMunicipio: callBackPesquisaMunicipio,
+            callBackCancelarMunicipio: callBackCancelarMunicipio
+        };
+
+    }();
+</script>

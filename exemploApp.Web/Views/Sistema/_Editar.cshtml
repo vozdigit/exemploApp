@@ -1,0 +1,13 @@
+@model exemploApp.Dominio.Entidades.EntidadesControleSistema.Sistema
+
+@using Tykon.Web.Helpers
+@using Tykon.Web.Models;
+@using exemploApp.Dominio.Entidades.EntidadesControleSistema;
+@using System.Web.Mvc.Html;
+@using System.Linq
+
+
+@Html.HiddenFor(x => x.Id)
+@Html.FWTextBoxGrupo(x => x.NomeSistema, "Nome do Sistema", true, FWTamanho.Cinco, "NomeSistema")
+@Html.FWTextBoxGrupo(x => x.SiglaSistema, "Sigla", true, FWTamanho.Cinco, "SiglaSistema")
+@Html.FWTextBoxGrupo(x => x.LogoSistema, "Logo", true, FWTamanho.Cinco, "LogoSistema")

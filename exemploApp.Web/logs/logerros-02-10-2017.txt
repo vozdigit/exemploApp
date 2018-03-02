@@ -1,0 +1,50 @@
+ERROR 2017-10-02 13:41:30,638 -3492493ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em System.IO.File.ReadAllText(String path)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-02 13:49:52,099 76811ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em System.IO.File.ReadAllText(String path)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-02 13:58:14,380 58579ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em System.IO.File.ReadAllText(String path)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-02 14:01:20,951 26119ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em System.IO.File.ReadAllText(String path)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-02 14:06:16,686 52141ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em System.IO.File.ReadAllText(String path)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264

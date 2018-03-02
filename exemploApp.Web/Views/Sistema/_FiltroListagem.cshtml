@@ -1,0 +1,30 @@
+@using Tykon.Web.Helpers
+
+<div class="form-horizontal">
+
+    @Html.FWTextBoxGrupoLivre("Nome do sistema ou parte", "NomeSistema", false, null, FWTamanho.Cinco, null, false, null)
+
+</div>
+
+<div class="botao-filtro">
+    <button class="btn btn-success botaofiltrar" onclick="clickFiltrar()"><i class="fa fa-filter"></i> Filtrar</button>
+    <button class="btn btn-default botaolimpar" onclick="principal.fluxoListagem('@Url.Action("Inicio")')"><i class="fa fa-eraser"></i> Limpar</button>
+</div>
+
+<script type="text/javascript">
+
+    var clickFiltrar = function()
+    {
+        var containerLoad = $(".widget.containerConteudo");
+
+        var nomeSistema = $("#NomeSistema").val();
+
+        var parametros = { "nome": nomeSistema };
+
+        var funcaoAtualiza = gridListagem.atualizarItens;
+
+        helperGrid.clickFiltrar(containerLoad, '@Url.Action("FiltrarSistemas")', parametros, funcaoAtualiza)
+    };
+
+
+</script>

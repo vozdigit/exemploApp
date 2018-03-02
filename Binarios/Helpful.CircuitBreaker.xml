@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Helpful.CircuitBreaker</name>
+    </assembly>
+    <members>
+        <member name="T:Helpful.CircuitBreaker.BreakerState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Helpful.CircuitBreaker.BreakerState.Uninitialised">
+            <summary>
+            Breaker is uninitialised
+            </summary>
+        </member>
+        <member name="F:Helpful.CircuitBreaker.BreakerState.Open">
+            <summary>
+            Breaker is open
+            </summary>
+        </member>
+        <member name="F:Helpful.CircuitBreaker.BreakerState.Closed">
+            <summary>
+            The breaker is closed
+            </summary>
+        </member>
+        <member name="F:Helpful.CircuitBreaker.BreakerState.HalfOpen">
+            <summary>
+            The breaker half open
+            </summary>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.CircuitBreaker">
+            <summary>
+            </summary>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.CircuitBreaker.ClosedCircuitBreaker">
+            <summary>
+            Raised when the circuit breaker enters the closed state
+            </summary>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.CircuitBreaker.OpenedCircuitBreaker">
+            <summary>
+            Raised when the circuit breaker enters the opened state
+            </summary>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.CircuitBreaker.TryingToCloseCircuitBreaker">
+            <summary>
+            Raised when trying to close the circuit breaker
+            </summary>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.CircuitBreaker.ToleratedOpenCircuitBreaker">
+            <summary>
+            Raised when the breaker tries to open but remains closed due to tolerance
+            </summary>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.CircuitBreaker.UnregisterCircuitBreaker">
+            <summary>
+            Raised when the circuit breaker is disposed
+            </summary>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.CircuitBreaker.RegisterCircuitBreaker">
+            <summary>
+            Raised when a circuit breaker is first used
+            </summary>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.CircuitBreaker.#ctor(Helpful.CircuitBreaker.Config.CircuitBreakerConfig)">
+            <summary>
+            Constructor without an event factory - the breaker will just raise normal .Net events for you to handle
+            </summary>
+            <param name="config">The config for the breaker</param>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.CircuitBreaker.State">
+            <summary>
+                Gets the state.
+            </summary>
+            <value>
+                The state.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.CircuitBreaker.BreakerId">
+            <summary>
+            Gets the breaker identifier.
+            </summary>
+            <value>
+            The breaker identifier.
+            </value>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.CircuitBreaker.Execute(System.Func{Helpful.CircuitBreaker.ActionResult})">
+            <summary>
+            Executes the specified function in the circuit breaker. The ActionResult of this function determines whether the breaker will try to open.
+            </summary>
+            <param name="action">The action.</param>
+            <exception cref="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerTimedOutException">The action timed out </exception>
+            <exception cref="T:System.ArgumentNullException">The value of 'action' cannot be null.</exception>
+            <exception cref="T:System.AggregateException">An exception contained by this <see cref="T:System.AggregateException" /> was not handled.</exception>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.CircuitBreaker.Execute(System.Action)">
+            <summary>
+                Executes the specified action in the circuit breaker
+            </summary>
+            <param name="action">The action.</param>
+            <exception cref="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerTimedOutException">The action timed out </exception>
+            <exception cref="T:System.ArgumentNullException">The value of 'action' cannot be null.</exception>
+            <exception cref="T:System.AggregateException">An exception contained by this <see cref="T:System.AggregateException" /> was not handled.</exception>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.Config.CircuitBreakerConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.Config.CircuitBreakerConfig.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Helpful.CircuitBreaker.Config.CircuitBreakerConfig"/> class.
+            </summary>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.CircuitBreakerConfig.OpenEventTolerance">
+            <summary>
+            The number of times an exception can occur before the circuit breaker is opened
+            </summary>
+            <value>
+            The open event tolerance.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.CircuitBreakerConfig.OpenEventToleranceResetPeriod">
+            <summary>
+            The period of time after which the count of tolerated failures will be reset.
+            </summary>
+            <value>
+            The timespan representing the time interval.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.CircuitBreakerConfig.BreakerOpenPeriods">
+            <summary>
+            Gets or sets the list of periods the breaker should be kept open. 
+            The last value will be what is repeated until the breaker is successfully closed.
+            If not set, a default of 60 seconds will be used for all breaker open periods.
+            </summary>
+            <value>
+            The array of timespans representing the breaker open periods.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.CircuitBreakerConfig.ExpectedExceptionListType">
+            <summary>
+            Gets or sets the expected type of the exception list. <see cref="T:Helpful.CircuitBreaker.ExceptionListType"/>
+            </summary>
+            <value>
+            The expected type of the exception list.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.CircuitBreakerConfig.ExpectedExceptionList">
+            <summary>
+            Gets or sets the expected exception list.
+            </summary>
+            <value>
+            The expected exception list.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.CircuitBreakerConfig.Timeout">
+            <summary>
+            Gets or sets the timeout.
+            </summary>
+            <value>
+            The timeout.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.CircuitBreakerConfig.UseTimeout">
+            <summary>
+            Gets or sets a value indicating whether [use timeout].
+            </summary>
+            <value>
+              <c>true</c> if [use timeout]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.CircuitBreakerConfig.ImmediateRetryOnFailure">
+            <summary>
+            Get or sets a value indicating whether a delegate failure
+            should cause an immediate retry.
+            </summary>
+            <value>
+            <c>true</c> if immediate retries are in effect; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.CircuitBreakerConfig.BreakerId">
+            <summary>
+            Gets or sets the breaker identifier.
+            </summary>
+            <value>
+            The breaker identifier.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.CircuitBreakerConfig.PermittedExceptionPassThrough">
+            <summary>
+            Sets the behaviour for passing through exceptions that won't open the breaker
+            </summary>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.ICircuitBreakerDefinition.OpenEventTolerance">
+            <summary>
+            The number of times an exception can occur before the circuit breaker is opened
+            </summary>
+            <value>
+            The open event tolerance.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.ICircuitBreakerDefinition.BreakerOpenPeriods">
+            <summary>
+            Gets or sets the list of periods the breaker should be kept open. 
+            The last value will be what is repeated until the breaker is successfully closed.
+            If not set, a default of 60 seconds will be used for all breaker open periods.
+            </summary>
+            <value>
+            The array of timespans representing the breaker open periods.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.ICircuitBreakerDefinition.ExpectedExceptionListType">
+            <summary>
+            Gets or sets the expected type of the exception list. <see cref="T:Helpful.CircuitBreaker.ExceptionListType"/>
+            </summary>
+            <value>
+            The expected type of the exception list.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.ICircuitBreakerDefinition.ExpectedExceptionList">
+            <summary>
+            Gets or sets the expected exception list.
+            </summary>
+            <value>
+            The expected exception list.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.ICircuitBreakerDefinition.Timeout">
+            <summary>
+            Gets or sets the timeout.
+            </summary>
+            <value>
+            The timeout.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.ICircuitBreakerDefinition.UseTimeout">
+            <summary>
+            Gets or sets a value indicating whether [use timeout].
+            </summary>
+            <value>
+              <c>true</c> if [use timeout]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.ICircuitBreakerDefinition.BreakerId">
+            <summary>
+            Gets or sets the breaker identifier.
+            </summary>
+            <value>
+            The breaker identifier.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Config.ICircuitBreakerDefinition.PermittedExceptionPassThrough">
+            <summary>
+            Sets the behaviour for passing through exceptions that won't open the breaker
+            </summary>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.Events.BreakerOpenReason">
+            <summary>
+            Reason the breaker is opened
+            </summary>
+        </member>
+        <member name="F:Helpful.CircuitBreaker.Events.BreakerOpenReason.Timeout">
+            <summary>
+            Due to timeout set by the circuit breaker config
+            </summary>
+        </member>
+        <member name="F:Helpful.CircuitBreaker.Events.BreakerOpenReason.Exception">
+            <summary>
+            Due to any other exception
+            </summary>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.Events.CircuitBreakerEventArgs">
+            <summary>
+            Event arguments for the circuit breaker events
+            </summary>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Events.CircuitBreakerEventArgs.Config">
+            <summary>
+            The config for the source breaker
+            </summary>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.Events.CircuitBreakerEventArgs.#ctor(Helpful.CircuitBreaker.Config.CircuitBreakerConfig)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="config">The config for the source breaker</param>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.Events.OpenedCircuitBreakerEventArgs">
+            <summary>
+            Event args for opened circuit breaker events
+            </summary>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Events.OpenedCircuitBreakerEventArgs.Reason">
+            <summary>
+            The reason for opening
+            </summary>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Events.OpenedCircuitBreakerEventArgs.Exception">
+            <summary>
+            The original exception
+            </summary>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.Events.OpenedCircuitBreakerEventArgs.#ctor(Helpful.CircuitBreaker.Config.CircuitBreakerConfig,Helpful.CircuitBreaker.Events.BreakerOpenReason,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="config">Configuration for the source breaker</param>
+            <param name="reason">The reason for opening</param>
+            <param name="exception">The original exception</param>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.Events.ToleratedOpenCircuitBreakerEventArgs">
+            <summary>
+            Event args for the tolerated open circuit breaker event
+            </summary>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Events.ToleratedOpenCircuitBreakerEventArgs.Reason">
+            <summary>
+            The reason why the breaker tried to open
+            </summary>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Events.ToleratedOpenCircuitBreakerEventArgs.Exception">
+            <summary>
+            The source exception
+            </summary>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Events.ToleratedOpenCircuitBreakerEventArgs.ToleratedOpenEventCount">
+            <summary>
+            How many open events have been tolerated
+            </summary>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.Events.ToleratedOpenCircuitBreakerEventArgs.#ctor(Helpful.CircuitBreaker.Config.CircuitBreakerConfig,Helpful.CircuitBreaker.Events.BreakerOpenReason,System.Exception,System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="config">The configuration for the source breaker</param>
+            <param name="reason">The reason why the breaker tried to open</param>
+            <param name="exception">The source exception</param>
+            <param name="toleratedOpenEventCount">How many open events have been tolerated</param>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.ExceptionListType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Helpful.CircuitBreaker.ExceptionListType.None">
+            <summary>
+            No exception list parsing
+            </summary>
+        </member>
+        <member name="F:Helpful.CircuitBreaker.ExceptionListType.BlackList">
+            <summary>
+            Blacklist (always open circuit breaker) on the specified exceptions
+            </summary>
+        </member>
+        <member name="F:Helpful.CircuitBreaker.ExceptionListType.WhiteList">
+            <summary>
+            Whitelist (silently catch if thrown) the specified excpetions
+            </summary>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.Exceptions.ActionResultNotGoodException">
+            <summary>
+            Thrown when the ActionResult enum value returned after execution is not ActionResult.Good
+            </summary>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.Exceptions.ActionResultNotGoodException.#ctor(Helpful.CircuitBreaker.Config.CircuitBreakerConfig)">
+            <summary>
+            Standard CircuitBreakerException constructor
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerException">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.Exceptions.CircuitBreakerException.#ctor(Helpful.CircuitBreaker.Config.CircuitBreakerConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerException"/> class.
+            </summary>
+            <param name="config">The configuration.</param>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.Exceptions.CircuitBreakerException.#ctor(Helpful.CircuitBreaker.Config.CircuitBreakerConfig,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerException"/> class.
+            </summary>
+            <param name="config">The configuration.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.Exceptions.CircuitBreakerException.Config">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerExecutionErrorException">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.Exceptions.CircuitBreakerExecutionErrorException.#ctor(Helpful.CircuitBreaker.Config.CircuitBreakerConfig,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerExecutionErrorException"/> class.
+            </summary>
+            <param name="config">The configuration.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerOpenException">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.Exceptions.CircuitBreakerOpenException.#ctor(Helpful.CircuitBreaker.Config.CircuitBreakerConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerOpenException"/> class.
+            </summary>
+            <param name="config">The configuration.</param>
+        </member>
+        <member name="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerTimedOutException">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.Exceptions.CircuitBreakerTimedOutException.#ctor(Helpful.CircuitBreaker.Config.CircuitBreakerConfig)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerTimedOutException"/> class.
+            </summary>
+            <param name="config">The configuration.</param>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.ICircuitBreaker.ClosedCircuitBreaker">
+            <summary>
+            Raised when the circuit breaker enters the closed state
+            </summary>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.ICircuitBreaker.OpenedCircuitBreaker">
+            <summary>
+            Raised when the circuit breaker enters the opened state
+            </summary>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.ICircuitBreaker.TryingToCloseCircuitBreaker">
+            <summary>
+            Raised when trying to close the circuit breaker
+            </summary>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.ICircuitBreaker.ToleratedOpenCircuitBreaker">
+            <summary>
+            Raised when the breaker tries to open but remains closed due to tolerance
+            </summary>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.ICircuitBreaker.UnregisterCircuitBreaker">
+            <summary>
+            Raised when the circuit breaker is disposed
+            </summary>
+        </member>
+        <member name="E:Helpful.CircuitBreaker.ICircuitBreaker.RegisterCircuitBreaker">
+            <summary>
+            Raised when a circuit breaker is first used
+            </summary>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.ICircuitBreaker.State">
+            <summary>
+                Gets the state.
+            </summary>
+            <value>
+                The state.
+            </value>
+        </member>
+        <member name="P:Helpful.CircuitBreaker.ICircuitBreaker.BreakerId">
+            <summary>
+            Gets the breaker identifier.
+            </summary>
+            <value>
+            The breaker identifier.
+            </value>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.ICircuitBreaker.Execute(System.Func{Helpful.CircuitBreaker.ActionResult})">
+            <summary>
+            Executes the specified function in the circuit breaker. The ActionResult of this function determines whether the breaker will try to open.
+            </summary>
+            <param name="action">The action.</param>
+            <exception cref="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerTimedOutException">The action timed out </exception>
+            <exception cref="T:System.ArgumentNullException">The value of 'action' cannot be null.</exception>
+            <exception cref="T:System.AggregateException">An exception contained by this <see cref="T:System.AggregateException" /> was not handled.</exception>
+        </member>
+        <member name="M:Helpful.CircuitBreaker.ICircuitBreaker.Execute(System.Action)">
+            <summary>
+                Executes the specified action in the circuit breaker
+            </summary>
+            <param name="action">The action.</param>
+            <exception cref="T:Helpful.CircuitBreaker.Exceptions.CircuitBreakerTimedOutException">The action timed out </exception>
+            <exception cref="T:System.ArgumentNullException">The value of 'action' cannot be null.</exception>
+            <exception cref="T:System.AggregateException">An exception contained by this <see cref="T:System.AggregateException" /> was not handled.</exception>
+        </member>
+    </members>
+</doc>

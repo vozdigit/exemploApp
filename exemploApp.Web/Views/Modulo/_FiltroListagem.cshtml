@@ -1,0 +1,31 @@
+@using Tykon.Web.Helpers
+
+<div class="form-horizontal">
+
+    @Html.FWTextBoxGrupoLivre("Nome do módulo ou parte", "NomeModulo", false, null, FWTamanho.Cinco, null, false, null)
+
+</div>
+
+<div class="botao-filtro">
+    <button class="btn btn-success botaofiltrar" onclick="clickFiltrar()"><i class="fa fa-filter"></i> Filtrar</button>
+    <button class="btn btn-default botaolimpar" onclick="principal.fluxoListagem('@Url.Action("Inicio")')"><i class="fa fa-eraser"></i> Limpar</button>
+</div>
+
+<script type="text/javascript">
+
+    var clickFiltrar = function()
+    {
+        var containerLoad = $(".widget.containerConteudo");
+
+        var nomeModulo = $("#NomeModulo").val();
+
+        var parametros = { "nomeModulo": nomeModulo };
+
+        var funcaoAtualiza = gridListagem.atualizarItens;
+
+        helperGrid.clickFiltrar(containerLoad, '@Url.Action("FiltrarModulos")', parametros, funcaoAtualiza)
+    };
+
+
+</script>
+

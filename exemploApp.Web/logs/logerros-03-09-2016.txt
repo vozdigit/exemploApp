@@ -1,0 +1,783 @@
+ERROR 2016-09-03 15:26:50,142 258454ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 15:39:27,589 1015900ms AbstractBatcher        Error              - Could not execute query: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 222
+ClientConnectionId:5ea87bbe-2509-4836-ab8f-0df9f0ed7f1a
+Error Number:544,State:1,Class:16
+ERROR 2016-09-03 15:39:27,884 1016196ms ADOExceptionReporter   Error              - Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+ERROR 2016-09-03 15:39:27,923 1016235ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not insert: [COSMOSS.Dominio.Entidades.EntidadesPadrao.PessoaJuridica][SQL: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()] ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 228
+   em NHibernate.Id.IdentityGenerator.InsertSelectDelegate.ExecuteAndExtract(IDbCommand insert, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\IdentityGenerator.cs:linha 74
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 42
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 51
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Persister\Entity\AbstractEntityPersister.cs:linha 3033
+   em NHibernate.Action.EntityIdentityInsertAction.Execute() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Action\EntityIdentityInsertAction.cs:linha 75
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 135
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 259
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeBeforeSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 360
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 227
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__0() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 281
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-09-03 15:39:37,245 1025556ms AbstractBatcher        Error              - Could not execute query: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 222
+ClientConnectionId:67b0e80d-2a89-4663-a2ce-0cef06916649
+Error Number:544,State:1,Class:16
+ERROR 2016-09-03 15:39:37,247 1025558ms ADOExceptionReporter   Error              - Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+ERROR 2016-09-03 15:39:37,281 1025592ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not insert: [COSMOSS.Dominio.Entidades.EntidadesPadrao.PessoaJuridica][SQL: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()] ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 228
+   em NHibernate.Id.IdentityGenerator.InsertSelectDelegate.ExecuteAndExtract(IDbCommand insert, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\IdentityGenerator.cs:linha 74
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 42
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 51
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Persister\Entity\AbstractEntityPersister.cs:linha 3033
+   em NHibernate.Action.EntityIdentityInsertAction.Execute() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Action\EntityIdentityInsertAction.cs:linha 75
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 135
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 259
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeBeforeSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 360
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 227
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__0() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 281
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-09-03 15:39:45,654 1033966ms AbstractBatcher        Error              - Could not execute query: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 222
+ClientConnectionId:6594de3b-73c2-4fe7-819d-d08fd2af55fc
+Error Number:544,State:1,Class:16
+ERROR 2016-09-03 15:39:45,656 1033968ms ADOExceptionReporter   Error              - Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+ERROR 2016-09-03 15:39:45,687 1033999ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not insert: [COSMOSS.Dominio.Entidades.EntidadesPadrao.PessoaJuridica][SQL: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()] ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 228
+   em NHibernate.Id.IdentityGenerator.InsertSelectDelegate.ExecuteAndExtract(IDbCommand insert, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\IdentityGenerator.cs:linha 74
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 42
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 51
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Persister\Entity\AbstractEntityPersister.cs:linha 3033
+   em NHibernate.Action.EntityIdentityInsertAction.Execute() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Action\EntityIdentityInsertAction.cs:linha 75
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 135
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 259
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeBeforeSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 360
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 227
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__0() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 281
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-09-03 17:43:03,194 40802ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 17:43:29,440 67048ms AbstractBatcher        Error              - Could not execute query: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 222
+ClientConnectionId:10c60f67-0ccf-4177-928b-6cba79c7a0b7
+Error Number:544,State:1,Class:16
+ERROR 2016-09-03 17:43:29,574 67182ms ADOExceptionReporter   Error              - Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+ERROR 2016-09-03 17:43:29,779 67387ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not insert: [COSMOSS.Dominio.Entidades.EntidadesPadrao.PessoaJuridica][SQL: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()] ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 228
+   em NHibernate.Id.IdentityGenerator.InsertSelectDelegate.ExecuteAndExtract(IDbCommand insert, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\IdentityGenerator.cs:linha 74
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 42
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 51
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Persister\Entity\AbstractEntityPersister.cs:linha 3033
+   em NHibernate.Action.EntityIdentityInsertAction.Execute() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Action\EntityIdentityInsertAction.cs:linha 75
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 135
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 259
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeBeforeSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 360
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 227
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__0() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 281
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-09-03 17:43:42,878 80486ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 17:52:19,000 596608ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 17:53:05,532 643140ms AbstractBatcher        Error              - Could not execute query: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 222
+ClientConnectionId:34ecc5ea-08c0-4dd8-a038-3ce9f693f9ab
+Error Number:544,State:1,Class:16
+ERROR 2016-09-03 17:53:05,545 643153ms ADOExceptionReporter   Error              - Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+ERROR 2016-09-03 17:53:05,793 643402ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not insert: [COSMOSS.Dominio.Entidades.EntidadesPadrao.PessoaJuridica][SQL: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()] ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 228
+   em NHibernate.Id.IdentityGenerator.InsertSelectDelegate.ExecuteAndExtract(IDbCommand insert, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\IdentityGenerator.cs:linha 74
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 42
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 51
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Persister\Entity\AbstractEntityPersister.cs:linha 3033
+   em NHibernate.Action.EntityIdentityInsertAction.Execute() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Action\EntityIdentityInsertAction.cs:linha 75
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 135
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 259
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeBeforeSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 360
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 227
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__0() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 281
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-09-03 17:53:23,497 661106ms AbstractBatcher        Error              - Could not execute query: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 222
+ClientConnectionId:113f3d54-7c5d-4d4a-87b4-0b99f0362eb6
+Error Number:544,State:1,Class:16
+ERROR 2016-09-03 17:53:23,501 661110ms ADOExceptionReporter   Error              - Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+ERROR 2016-09-03 17:53:23,757 661365ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not insert: [COSMOSS.Dominio.Entidades.EntidadesPadrao.PessoaJuridica][SQL: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()] ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 228
+   em NHibernate.Id.IdentityGenerator.InsertSelectDelegate.ExecuteAndExtract(IDbCommand insert, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\IdentityGenerator.cs:linha 74
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 42
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 51
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Persister\Entity\AbstractEntityPersister.cs:linha 3033
+   em NHibernate.Action.EntityIdentityInsertAction.Execute() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Action\EntityIdentityInsertAction.cs:linha 75
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 135
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 259
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeBeforeSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 360
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 227
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__0() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 281
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-09-03 17:56:18,105 835713ms AbstractBatcher        Error              - Could not execute query: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 222
+ClientConnectionId:fb262ca1-95ae-4f46-9336-48b7b2a46a30
+Error Number:544,State:1,Class:16
+ERROR 2016-09-03 17:56:18,111 835719ms ADOExceptionReporter   Error              - Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+ERROR 2016-09-03 17:56:18,417 836025ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not insert: [COSMOSS.Dominio.Entidades.EntidadesPadrao.PessoaJuridica][SQL: INSERT INTO COSMOSS.PESSOA_JURIDICA (RAZAO_SOCIAL, NOME_FANTASIA, NUMR_CNPJ, NUMR_INSCRICAO_ESTADUAL, NUMR_INSCRICAO_MUNICIPAL, ID_PESSOA, ID_PESSOA_JURIDICA) VALUES (?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()] ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'PESSOA_JURIDICA' when IDENTITY_INSERT is set to OFF.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 228
+   em NHibernate.Id.IdentityGenerator.InsertSelectDelegate.ExecuteAndExtract(IDbCommand insert, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\IdentityGenerator.cs:linha 74
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 42
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 51
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Persister\Entity\AbstractEntityPersister.cs:linha 3033
+   em NHibernate.Action.EntityIdentityInsertAction.Execute() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Action\EntityIdentityInsertAction.cs:linha 75
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 135
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 259
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2545
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 579
+   em NHibernate.Engine.Cascade.CascadeToOne(Object parent, Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 216
+   em NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\Cascade.cs:linha 126
+   em NHibernate.Event.Default.AbstractSaveEventListener.CascadeBeforeSave(IEventSource source, IEntityPersister persister, Object entity, Object anything) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 360
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 227
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 129
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2531
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__0() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 281
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-09-03 18:19:32,146 66975ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 19:02:23,005 836627ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 19:30:35,397 25129ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 19:38:53,588 31639ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 19:53:18,727 896778ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 19:53:40,926 918977ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 20:03:26,704 1504756ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 20:15:53,177 398724ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 20:20:15,272 145029ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 20:32:26,911 277230ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 20:33:51,657 361977ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 20:36:51,034 35457ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 20:38:04,023 108446ms ADOExceptionReporter   Error              - Cannot insert the value NULL into column 'ID_PESSOA_JURIDICA', table 'VDDESENV.cosmoss.ORGANIZACAO_SOCIAL'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+ERROR 2016-09-03 20:38:04,064 108487ms tFlushingEventListener Error              - Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID_PESSOA_JURIDICA', table 'VDDESENV.cosmoss.ORGANIZACAO_SOCIAL'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 75
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 91
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 412
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 170
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 248
+ERROR 2016-09-03 20:38:04,219 108642ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID_PESSOA_JURIDICA', table 'VDDESENV.cosmoss.ORGANIZACAO_SOCIAL'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 75
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 91
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 412
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 170
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 256
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultFlushEventListener.cs:linha 20
+   em NHibernate.Impl.SessionImpl.Flush() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 1459
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 155
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__0() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 281
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-09-03 20:38:15,369 119792ms ADOExceptionReporter   Error              - Cannot insert the value NULL into column 'ID_PESSOA_JURIDICA', table 'VDDESENV.cosmoss.ORGANIZACAO_SOCIAL'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+ERROR 2016-09-03 20:38:15,371 119794ms tFlushingEventListener Error              - Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID_PESSOA_JURIDICA', table 'VDDESENV.cosmoss.ORGANIZACAO_SOCIAL'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 75
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 91
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 412
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 170
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 248
+ERROR 2016-09-03 20:38:15,523 119946ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID_PESSOA_JURIDICA', table 'VDDESENV.cosmoss.ORGANIZACAO_SOCIAL'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 75
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 91
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 412
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 170
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 256
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultFlushEventListener.cs:linha 20
+   em NHibernate.Impl.SessionImpl.Flush() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 1459
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 155
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__0() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 281
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-09-03 20:38:29,487 133910ms ADOExceptionReporter   Error              - Cannot insert the value NULL into column 'ID_PESSOA_JURIDICA', table 'VDDESENV.cosmoss.ORGANIZACAO_SOCIAL'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+ERROR 2016-09-03 20:38:29,489 133912ms tFlushingEventListener Error              - Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID_PESSOA_JURIDICA', table 'VDDESENV.cosmoss.ORGANIZACAO_SOCIAL'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 75
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 91
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 412
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 170
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 248
+ERROR 2016-09-03 20:38:29,625 134048ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'ID_PESSOA_JURIDICA', table 'VDDESENV.cosmoss.ORGANIZACAO_SOCIAL'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 75
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 91
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 412
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 170
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 256
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultFlushEventListener.cs:linha 20
+   em NHibernate.Impl.SessionImpl.Flush() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 1459
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 155
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em Tykon.Base.Servicos.Servico`1.AdicionarInterno(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 132
+   em Tykon.Base.Servicos.Servico`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 85
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__0() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 281
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-09-03 20:39:47,948 20153ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 20:49:00,196 31171ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 20:52:57,571 268547ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2016-09-03 20:53:29,388 300364ms ADOExceptionReporter   Error              - The DELETE statement conflicted with the REFERENCE constraint "FK_ITEM_PERFIL_ITEM". The conflict occurred in database "VDDESENV", table "cosmoss.ITEM_PERFIL", column 'ID_ITEM'.
+The statement has been terminated.
+ERROR 2016-09-03 20:53:29,563 300539ms tFlushingEventListener Error              - Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: The DELETE statement conflicted with the REFERENCE constraint "FK_ITEM_PERFIL_ITEM". The conflict occurred in database "VDDESENV", table "cosmoss.ITEM_PERFIL", column 'ID_ITEM'.
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 75
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 91
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 412
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 248
+ERROR 2016-09-03 20:53:29,751 300726ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: The DELETE statement conflicted with the REFERENCE constraint "FK_ITEM_PERFIL_ITEM". The conflict occurred in database "VDDESENV", table "cosmoss.ITEM_PERFIL", column 'ID_ITEM'.
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 75
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 91
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 412
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 256
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultFlushEventListener.cs:linha 20
+   em NHibernate.Impl.SessionImpl.Flush() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 1459
+   em Tykon.Base.Persistencia.Repositorio`1.RemoverEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 177
+   em Tykon.Base.Persistencia.Repositorio`1.Remover(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 107
+   em Tykon.Base.Servicos.Servico`1.RemoverInterno(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 145
+   em Tykon.Base.Servicos.Servico`1.Remover(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 105
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass11_0.<Excluir>b__0() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 142
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2016-09-03 20:56:27,553 478528ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'D:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264

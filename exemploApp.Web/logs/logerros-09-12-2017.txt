@@ -1,0 +1,149 @@
+ERROR 2017-12-08 22:14:14,426 84388ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-12-08 22:17:37,450 287412ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-12-08 22:19:40,285 47152ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-12-08 22:28:50,413 597279ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-12-08 22:30:12,979 679846ms Controladora           LogExcecao         - ExecutarServicoSeguro
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em COSMOSS.Dominio.Validacoes.ValidacaoRegistroEvento.VerificarUsuarioRespostaObrigatorio(RegistroEvento registroEvento) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Dominio\Validacoes\ValidacaoRegistroEvento.cs:linha 104
+   em FluentValidation.Validators.PredicateValidator.IsValid(PropertyValidatorContext context) na c:\Projects\FluentValidation\src\FluentValidation\Validators\PredicateValidator.cs:linha 37
+   em FluentValidation.Validators.PropertyValidator.Validate(PropertyValidatorContext context) na c:\Projects\FluentValidation\src\FluentValidation\Validators\PropertyValidator.cs:linha 67
+   em FluentValidation.Internal.PropertyRule.<Validate>d__10.MoveNext() na c:\Projects\FluentValidation\src\FluentValidation\Internal\PropertyRule.cs:linha 227
+   em System.Linq.Enumerable.<SelectManyIterator>d__16`2.MoveNext()
+   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) na c:\Projects\FluentValidation\src\FluentValidation\AbstractValidator.cs:linha 113
+   em Tykon.Base.Validacoes.Validacao`1.Validar(T objeto) na D:\VOZDIGITAL\Tykon\Tykon.Base\Validacoes\Validacao.cs:linha 62
+   em COSMOSS.Servico.ServicoRegistroEvento.AtualizarInterno(RegistroEvento entidade) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoRegistroEvento.cs:linha 159
+   em Tykon.Base.Servicos.Servico`1.Atualizar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 95
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__1() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 290
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2017-12-08 22:32:57,303 844170ms Controladora           LogExcecao         - ExecutarServicoSeguro
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em COSMOSS.Dominio.Validacoes.ValidacaoRegistroEvento.VerificarUsuarioRespostaObrigatorio(RegistroEvento registroEvento) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Dominio\Validacoes\ValidacaoRegistroEvento.cs:linha 104
+   em FluentValidation.Validators.PredicateValidator.IsValid(PropertyValidatorContext context) na c:\Projects\FluentValidation\src\FluentValidation\Validators\PredicateValidator.cs:linha 37
+   em FluentValidation.Validators.PropertyValidator.Validate(PropertyValidatorContext context) na c:\Projects\FluentValidation\src\FluentValidation\Validators\PropertyValidator.cs:linha 67
+   em FluentValidation.Internal.PropertyRule.<Validate>d__10.MoveNext() na c:\Projects\FluentValidation\src\FluentValidation\Internal\PropertyRule.cs:linha 227
+   em System.Linq.Enumerable.<SelectManyIterator>d__16`2.MoveNext()
+   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) na c:\Projects\FluentValidation\src\FluentValidation\AbstractValidator.cs:linha 113
+   em Tykon.Base.Validacoes.Validacao`1.Validar(T objeto) na D:\VOZDIGITAL\Tykon\Tykon.Base\Validacoes\Validacao.cs:linha 62
+   em COSMOSS.Servico.ServicoRegistroEvento.AtualizarInterno(RegistroEvento entidade) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoRegistroEvento.cs:linha 159
+   em Tykon.Base.Servicos.Servico`1.Atualizar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 95
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__1() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 290
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2017-12-08 22:33:51,594 898461ms Controladora           LogExcecao         - ExecutarServicoSeguro
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em COSMOSS.Dominio.Validacoes.ValidacaoRegistroEvento.VerificarUsuarioRespostaObrigatorio(RegistroEvento registroEvento) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Dominio\Validacoes\ValidacaoRegistroEvento.cs:linha 104
+   em FluentValidation.Validators.PredicateValidator.IsValid(PropertyValidatorContext context) na c:\Projects\FluentValidation\src\FluentValidation\Validators\PredicateValidator.cs:linha 37
+   em FluentValidation.Validators.PropertyValidator.Validate(PropertyValidatorContext context) na c:\Projects\FluentValidation\src\FluentValidation\Validators\PropertyValidator.cs:linha 67
+   em FluentValidation.Internal.PropertyRule.<Validate>d__10.MoveNext() na c:\Projects\FluentValidation\src\FluentValidation\Internal\PropertyRule.cs:linha 227
+   em System.Linq.Enumerable.<SelectManyIterator>d__16`2.MoveNext()
+   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) na c:\Projects\FluentValidation\src\FluentValidation\AbstractValidator.cs:linha 113
+   em Tykon.Base.Validacoes.Validacao`1.Validar(T objeto) na D:\VOZDIGITAL\Tykon\Tykon.Base\Validacoes\Validacao.cs:linha 62
+   em COSMOSS.Servico.ServicoRegistroEvento.AtualizarInterno(RegistroEvento entidade) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoRegistroEvento.cs:linha 159
+   em Tykon.Base.Servicos.Servico`1.Atualizar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 95
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__1() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 290
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2017-12-09 00:24:08,028 166264ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-12-09 00:26:03,112 281348ms ADOExceptionReporter   Error              - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+ERROR 2017-12-09 00:26:03,185 281421ms ADOExceptionReporter   Error              - O caminho da rede não foi encontrado
+ERROR 2017-12-09 00:26:03,194 281430ms ADOExceptionReporter   Error              - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+ERROR 2017-12-09 00:26:03,198 281434ms ADOExceptionReporter   Error              - O caminho da rede não foi encontrado
+ERROR 2017-12-09 00:36:57,563 935799ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-12-09 00:58:52,878 2251115ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-12-09 01:07:04,660 2742897ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-12-09 01:12:15,574 3053811ms ADOExceptionReporter   Error              - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+ERROR 2017-12-09 01:12:15,629 3053866ms ADOExceptionReporter   Error              - O caminho da rede não foi encontrado
+ERROR 2017-12-09 01:12:15,651 3053888ms ADOExceptionReporter   Error              - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+ERROR 2017-12-09 01:12:15,656 3053893ms ADOExceptionReporter   Error              - O caminho da rede não foi encontrado
+ERROR 2017-12-09 01:12:15,659 3053895ms ADOExceptionReporter   Error              - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+ERROR 2017-12-09 01:12:15,661 3053897ms ADOExceptionReporter   Error              - O caminho da rede não foi encontrado
+ERROR 2017-12-09 01:14:44,196 3202432ms ADOExceptionReporter   Error              - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+ERROR 2017-12-09 01:14:44,203 3202439ms ADOExceptionReporter   Error              - O caminho da rede não foi encontrado
+ERROR 2017-12-09 01:14:44,210 3202446ms ADOExceptionReporter   Error              - Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: Named Pipes Provider, error: 40 - Não foi possível abrir uma conexão com o SQL Server)
+ERROR 2017-12-09 01:14:44,212 3202448ms ADOExceptionReporter   Error              - O caminho da rede não foi encontrado
+ERROR 2017-12-09 01:26:57,345 3935581ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-12-09 01:29:54,734 4112970ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264

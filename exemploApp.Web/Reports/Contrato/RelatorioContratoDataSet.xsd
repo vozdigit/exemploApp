@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RelatorioContratoDataSet" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RelatorioContratoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RelatorioContratoDataSet" msprop:Generator_UserDSName="RelatorioContratoDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CONTRATO" msprop:Generator_TableClassName="CONTRATODataTable" msprop:Generator_TableVarName="tableCONTRATO" msprop:Generator_RowChangedName="CONTRATORowChanged" msprop:Generator_TablePropName="CONTRATO" msprop:Generator_RowDeletingName="CONTRATORowDeleting" msprop:Generator_RowChangingName="CONTRATORowChanging" msprop:Generator_RowEvHandlerName="CONTRATORowChangeEventHandler" msprop:Generator_RowDeletedName="CONTRATORowDeleted" msprop:Generator_RowClassName="CONTRATORow" msprop:Generator_UserTableName="CONTRATO" msprop:Generator_RowEvArgName="CONTRATORowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RazaoSocial" msprop:Generator_ColumnVarNameInTable="columnRazaoSocial" msprop:Generator_ColumnPropNameInRow="RazaoSocial" msprop:Generator_ColumnPropNameInTable="RazaoSocialColumn" msprop:Generator_UserColumnName="RazaoSocial" type="xs:string" minOccurs="0" />
+              <xs:element name="DescricaoStatus" msprop:Generator_ColumnVarNameInTable="columnDescricaoStatus" msprop:Generator_ColumnPropNameInRow="DescricaoStatus" msprop:Generator_ColumnPropNameInTable="DescricaoStatusColumn" msprop:Generator_UserColumnName="DescricaoStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroOrdem" msprop:Generator_ColumnVarNameInTable="columnNumeroOrdem" msprop:Generator_ColumnPropNameInRow="NumeroOrdem" msprop:Generator_ColumnPropNameInTable="NumeroOrdemColumn" msprop:Generator_UserColumnName="NumeroOrdem" type="xs:string" minOccurs="0" />
+              <xs:element name="Ano" msprop:Generator_ColumnVarNameInTable="columnAno" msprop:Generator_ColumnPropNameInRow="Ano" msprop:Generator_ColumnPropNameInTable="AnoColumn" msprop:Generator_UserColumnName="Ano" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,1384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9769F950-E098-4C5B-9752-27C4D7EEC09E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>exemploApp.Web</RootNamespace>
+    <AssemblyName>exemploApp.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Binarios\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\Binarios\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\Binarios\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicosoftReportViewerWebForms_v11.1.0.1\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.11.0.0\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ReportViewerForMvc, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ReportViewerForMvc.1.0.1\lib\net45\ReportViewerForMvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Tykon.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binarios\Tykon.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Tykon.Fabricas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binarios\Tykon.Fabricas.dll</HintPath>
+    </Reference>
+    <Reference Include="Tykon.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binarios\Tykon.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=__MvcPagesVersion__, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\UsuarioexemploApp.cs" />
+    <Compile Include="Recursos\ReportUtil.cs" />
+    <Compile Include="Controllers\ControladorBaseexemploApp.cs" />
+    <Compile Include="Controllers\ItemController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\ModuloController.cs" />
+    <Compile Include="Controllers\PerfilController.cs" />
+    <Compile Include="Controllers\PessoaController.cs" />
+    <Compile Include="Controllers\PrincipalController.cs" />
+    <Compile Include="Controllers\SistemaController.cs" />
+    <Compile Include="Controllers\UsuarioSistemaController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Fabrica.cs" />
+    <Compile Include="Helpers\HelperConfiguracao.cs" />
+    <Compile Include="Helpers\UsuarioLogado.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato\RelatorioContratoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioContratoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RegistroEvento\RelatorioRegistroEventoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioRegistroEventoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RegistroMovimentoFaixa\RelatorioRegistroMovimentoDataSet.Designer.cs">
+      <DependentUpon>RelatorioRegistroMovimentoDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\RegistroMovimentoAnual\RelatorioRegistroMovimentoAnualDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioRegistroMovimentoAnualDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RegistroMovimentoDiarioFaixa\RelatorioRegistroMovimentoDiarioDataSet.Designer.cs">
+      <DependentUpon>RelatorioRegistroMovimentoDiarioDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\RegistroMovimentoDiarioPrevistoFaixa\RelatorioRegistroMovimentoDiarioPrevistoDataSet.Designer.cs">
+      <DependentUpon>RelatorioRegistroMovimentoDiarioPrevistoDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\RegistroMovimentoDiarioPrevisto\RelatorioRegistroMovimentoDiarioPrevistoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioRegistroMovimentoDiarioPrevistoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RegistroMovimentoDiario\RelatorioRegistroMovimentoDiarioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioRegistroMovimentoDiarioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RegistroMovimentoTaxa\RelatorioRegistroMovimentoTaxaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioRegistroMovimentoTaxaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RegistroMovimento\RelatorioRegistroMovimentoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioRegistroMovimentoDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\amaretti\assets\css\style.css" />
+    <Content Include="Content\amaretti\assets\css\themes\theme-cake.css" />
+    <Content Include="Content\amaretti\assets\css\themes\theme-google.css" />
+    <Content Include="Content\amaretti\assets\css\themes\theme-sunrise.css" />
+    <Content Include="Content\amaretti\assets\css\themes\theme-twilight.css" />
+    <Content Include="Content\amaretti\assets\img\140x140.png" />
+    <Content Include="Content\amaretti\assets\img\404-img-2x.png" />
+    <Content Include="Content\amaretti\assets\img\404-img.png" />
+    <Content Include="Content\amaretti\assets\img\avatar.jpg" />
+    <Content Include="Content\amaretti\assets\img\avatar2.jpg" />
+    <Content Include="Content\amaretti\assets\img\avatar3.jpg" />
+    <Content Include="Content\amaretti\assets\img\avatar4.jpg" />
+    <Content Include="Content\amaretti\assets\img\avatar5.jpg" />
+    <Content Include="Content\amaretti\assets\img\avatar6.jpg" />
+    <Content Include="Content\amaretti\assets\img\avatar7.jpg" />
+    <Content Include="Content\amaretti\assets\img\avatar8.jpg" />
+    <Content Include="Content\amaretti\assets\img\bitbucket.png" />
+    <Content Include="Content\amaretti\assets\img\dribbble.png" />
+    <Content Include="Content\amaretti\assets\img\gallery1.jpg" />
+    <Content Include="Content\amaretti\assets\img\gallery2.jpg" />
+    <Content Include="Content\amaretti\assets\img\gallery3.jpg" />
+    <Content Include="Content\amaretti\assets\img\gallery5.jpg" />
+    <Content Include="Content\amaretti\assets\img\gallery6.jpg" />
+    <Content Include="Content\amaretti\assets\img\gallery7.jpg" />
+    <Content Include="Content\amaretti\assets\img\gallery8.jpg" />
+    <Content Include="Content\amaretti\assets\img\github.png" />
+    <Content Include="Content\amaretti\assets\img\logo-full-retina.png" />
+    <Content Include="Content\amaretti\assets\img\logo-full.png" />
+    <Content Include="Content\amaretti\assets\img\logo.png" />
+    <Content Include="Content\amaretti\assets\img\profile.jpg" />
+    <Content Include="Content\amaretti\assets\img\slack.png" />
+    <Content Include="Content\amaretti\assets\js\main.js" />
+    <Content Include="Content\amaretti\assets\lib\bootstrap-markdown\js\bootstrap-markdown.js" />
+    <Content Include="Content\amaretti\assets\lib\bootstrap-slider\css\bootstrap-slider.css" />
+    <Content Include="Content\amaretti\assets\lib\bootstrap-slider\js\bootstrap-slider.js" />
+    <Content Include="Content\amaretti\assets\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\amaretti\assets\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Content\amaretti\assets\lib\chartjs\Chart.min.js" />
+    <Content Include="Content\amaretti\assets\lib\countup\countUp.min.js" />
+    <Content Include="Content\amaretti\assets\lib\datatables\css\dataTables.bootstrap.min.css" />
+    <Content Include="Content\amaretti\assets\lib\datatables\js\dataTables.bootstrap.min.js" />
+    <Content Include="Content\amaretti\assets\lib\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="Content\amaretti\assets\lib\datatables\plugins\buttons\js\buttons.bootstrap.js" />
+    <Content Include="Content\amaretti\assets\lib\datatables\plugins\buttons\js\buttons.colVis.js" />
+    <Content Include="Content\amaretti\assets\lib\datatables\plugins\buttons\js\buttons.flash.js" />
+    <Content Include="Content\amaretti\assets\lib\datatables\plugins\buttons\js\buttons.html5.js" />
+    <Content Include="Content\amaretti\assets\lib\datatables\plugins\buttons\js\buttons.print.js" />
+    <Content Include="Content\amaretti\assets\lib\datatables\plugins\buttons\js\dataTables.buttons.js" />
+    <Content Include="Content\amaretti\assets\lib\datetimepicker\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Content\amaretti\assets\lib\datetimepicker\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Content\amaretti\assets\lib\dropzone\dist\dropzone.css" />
+    <Content Include="Content\amaretti\assets\lib\dropzone\dist\dropzone.js" />
+    <Content Include="Content\amaretti\assets\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\amaretti\assets\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\amaretti\assets\lib\fuelux\js\wizard.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery-flot\jquery.flot.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery-flot\jquery.flot.pie.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery-flot\jquery.flot.resize.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery-flot\plugins\curvedLines.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery-flot\plugins\jquery.flot.orderBars.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.fullcalendar\fullcalendar.css" />
+    <Content Include="Content\amaretti\assets\lib\jquery.fullcalendar\fullcalendar.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.fullcalendar\fullcalendar.print.css" />
+    <Content Include="Content\amaretti\assets\lib\jquery.gritter\css\jquery.gritter.css" />
+    <Content Include="Content\amaretti\assets\lib\jquery.gritter\images\gritter-bg.png" />
+    <Content Include="Content\amaretti\assets\lib\jquery.gritter\images\gritter-light.png" />
+    <Content Include="Content\amaretti\assets\lib\jquery.gritter\images\gritter.png" />
+    <Content Include="Content\amaretti\assets\lib\jquery.gritter\images\ie-spacer.gif" />
+    <Content Include="Content\amaretti\assets\lib\jquery.gritter\js\jquery.gritter.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.magnific-popup\jquery.magnific-popup.min.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.magnific-popup\magnific-popup.css" />
+    <Content Include="Content\amaretti\assets\lib\jquery.maskedinput\jquery.maskedinput.min.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.nanoscroller\css\nanoscroller.css" />
+    <Content Include="Content\amaretti\assets\lib\jquery.nanoscroller\javascripts\jquery.nanoscroller.min.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.nestable\jquery.nestable.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.niftymodals\css\component.css" />
+    <Content Include="Content\amaretti\assets\lib\jquery.niftymodals\js\jquery.modalEffects.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.sparkline\jquery.sparkline.min.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.vectormap\jquery-jvectormap-1.2.2.css" />
+    <Content Include="Content\amaretti\assets\lib\jquery.vectormap\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.vectormap\maps\jquery-jvectormap-au-mill-en.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.vectormap\maps\jquery-jvectormap-ca-lcc-en.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.vectormap\maps\jquery-jvectormap-fr-merc-en.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.vectormap\maps\jquery-jvectormap-in-mill-en.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.vectormap\maps\jquery-jvectormap-map.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.vectormap\maps\jquery-jvectormap-uk-mill-en.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.vectormap\maps\jquery-jvectormap-us-il-chicago-mill-en.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.vectormap\maps\jquery-jvectormap-us-merc-en.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery.vectormap\maps\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="Content\amaretti\assets\lib\jquery\jquery.min.js" />
+    <Content Include="Content\amaretti\assets\lib\markdown-js\markdown.js" />
+    <Content Include="Content\amaretti\assets\lib\masonry\masonry.pkgd.min.js" />
+    <Content Include="Content\amaretti\assets\lib\moment.js\min\moment.min.js" />
+    <Content Include="Content\amaretti\assets\lib\morrisjs\morris.css" />
+    <Content Include="Content\amaretti\assets\lib\morrisjs\morris.min.js" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\bold-italic\opensans-bold-italic-webfont.svg" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\bold\opensans-bold-webfont.svg" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\extrabold-italic\opensans-extrabold-italic-webfont.svg" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\extrabold\opensans-extrabold-webfont.svg" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\italic\opensans-italic-webfont.svg" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\light-italic\opensans-light-italic-webfont.svg" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\light\opensans-light-webfont.svg" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\regular\opensans-regular-webfont.svg" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\semibold-italic\opensans-semibold-italic-webfont.svg" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\semibold\opensans-semibold-webfont.svg" />
+    <Content Include="Content\amaretti\assets\lib\parsley\parsley.min.js" />
+    <Content Include="Content\amaretti\assets\lib\prettify\prettify.js" />
+    <Content Include="Content\amaretti\assets\lib\raleway\bold\raleway-bold.svg" />
+    <Content Include="Content\amaretti\assets\lib\raleway\extrabold\raleway-extrabold.svg" />
+    <Content Include="Content\amaretti\assets\lib\raleway\extralight\raleway-extralight.svg" />
+    <Content Include="Content\amaretti\assets\lib\raleway\heavy\raleway-heavy.svg" />
+    <Content Include="Content\amaretti\assets\lib\raleway\light\raleway-light.svg" />
+    <Content Include="Content\amaretti\assets\lib\raleway\medium\raleway-medium.svg" />
+    <Content Include="Content\amaretti\assets\lib\raleway\regular\raleway-regular.svg" />
+    <Content Include="Content\amaretti\assets\lib\raleway\semibold\raleway-semibold.svg" />
+    <Content Include="Content\amaretti\assets\lib\raleway\thin\raleway-thin.svg" />
+    <Content Include="Content\amaretti\assets\lib\raphael\raphael-min.js" />
+    <Content Include="Content\amaretti\assets\lib\select2\css\select2.min.css" />
+    <Content Include="Content\amaretti\assets\lib\select2\js\select2.min.js" />
+    <Content Include="Content\amaretti\assets\lib\skycons\skycons.js" />
+    <Content Include="Content\amaretti\assets\lib\stroke-7\fonts\Stroke-7.svg" />
+    <Content Include="Content\amaretti\assets\lib\stroke-7\style.css" />
+    <Content Include="Content\amaretti\assets\lib\summernote\summernote-ext-amaretti.js" />
+    <Content Include="Content\amaretti\assets\lib\summernote\summernote.css" />
+    <Content Include="Content\amaretti\assets\lib\summernote\summernote.min.js" />
+    <Content Include="Content\amaretti\assets\lib\theme-switcher\theme-switcher.min.css" />
+    <Content Include="Content\amaretti\assets\lib\theme-switcher\theme-switcher.min.js" />
+    <Content Include="Content\base\animate.min.css" />
+    <Content Include="Content\base\apps.js" />
+    <Content Include="Content\base\blue.css" />
+    <Content Include="Content\base\relatorios.css" />
+    <Content Include="Content\base\style-responsive.css" />
+    <Content Include="Content\base\style.css" />
+    <Content Include="Content\bootstrap-datepicker\css\datepicker.css" />
+    <Content Include="Content\bootstrap-datepicker\css\datepicker3.css" />
+    <Content Include="Content\bootstrap-datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="Content\bootstrap-datepicker\js\bootstrap-datepicker.pt-BR.js" />
+    <Content Include="Content\bootstrap-multiselect\css\bootstrap-multiselect.css" />
+    <Content Include="Content\bootstrap-multiselect\js\bootstrap-multiselect.js" />
+    <Content Include="Content\bootstrap-notify\notify.js" />
+    <Content Include="Content\bootstrap-select\bootstrap-select.min.css" />
+    <Content Include="Content\bootstrap-select\bootstrap-select.min.js" />
+    <Content Include="Content\bootstrap-switch\bootstrap-switch.min.css" />
+    <Content Include="Content\bootstrap-switch\bootstrap-switch.min.js" />
+    <Content Include="Content\bootstrap-timepicker\css\bootstrap-timepicker.min.css" />
+    <Content Include="Content\bootstrap-timepicker\js\bootstrap-timepicker.min.js" />
+    <Content Include="Content\bootstrap-wizard\css\bwizard.min.css" />
+    <Content Include="Content\bootstrap-wizard\js\bwizard.js" />
+    <Content Include="Content\bootstrap\Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\chosen-sprite%402x.png" />
+    <Content Include="Content\chosen-sprite.png" />
+    <Content Include="Content\chosen\chosen-sprite%402x.png" />
+    <Content Include="Content\chosen\chosen-sprite.png" />
+    <Content Include="Content\chosen\chosen.css" />
+    <Content Include="Content\chosen\chosen.jquery.js" />
+    <Content Include="Content\chosen\chosen.jquery.min.js" />
+    <Content Include="Content\chosen\chosen.min.css" />
+    <Content Include="Content\chosen\chosen.proto.js" />
+    <Content Include="Content\chosen\chosen.proto.min.js" />
+    <Content Include="Content\DataTables\css\data-table.css" />
+    <Content Include="Content\DataTables\img\sort_asc.png" />
+    <Content Include="Content\DataTables\img\sort_both.png" />
+    <Content Include="Content\DataTables\img\sort_desc.png" />
+    <Content Include="Content\DataTables\js\dataTables.autoFill.js" />
+    <Content Include="Content\DataTables\js\dataTables.colReorder.js" />
+    <Content Include="Content\DataTables\js\dataTables.colVis.js" />
+    <Content Include="Content\DataTables\js\dataTables.fixedColumns.js" />
+    <Content Include="Content\DataTables\js\dataTables.fixedHeader.js" />
+    <Content Include="Content\DataTables\js\dataTables.keyTable.js" />
+    <Content Include="Content\DataTables\js\dataTables.responsive.js" />
+    <Content Include="Content\DataTables\js\dataTables.scroller.js" />
+    <Content Include="Content\DataTables\js\dataTables.tableTools.js" />
+    <Content Include="Content\DataTables\js\jquery.dataTables.js" />
+    <Content Include="Content\DataTables\js\jquery.dataTables.pt-BR.txt" />
+    <Content Include="Content\Favicon\android-icon-144x144.png" />
+    <Content Include="Content\Favicon\android-icon-192x192.png" />
+    <Content Include="Content\Favicon\android-icon-36x36.png" />
+    <Content Include="Content\Favicon\android-icon-48x48.png" />
+    <Content Include="Content\Favicon\android-icon-72x72.png" />
+    <Content Include="Content\Favicon\android-icon-96x96.png" />
+    <Content Include="Content\Favicon\apple-icon-114x114.png" />
+    <Content Include="Content\Favicon\apple-icon-120x120.png" />
+    <Content Include="Content\Favicon\apple-icon-144x144.png" />
+    <Content Include="Content\Favicon\apple-icon-152x152.png" />
+    <Content Include="Content\Favicon\apple-icon-180x180.png" />
+    <Content Include="Content\Favicon\apple-icon-57x57.png" />
+    <Content Include="Content\Favicon\apple-icon-60x60.png" />
+    <Content Include="Content\Favicon\apple-icon-72x72.png" />
+    <Content Include="Content\Favicon\apple-icon-76x76.png" />
+    <Content Include="Content\Favicon\apple-icon-precomposed.png" />
+    <Content Include="Content\Favicon\apple-icon.png" />
+    <Content Include="Content\Favicon\browserconfig.xml" />
+    <Content Include="Content\Favicon\favicon-16x16.png" />
+    <Content Include="Content\Favicon\favicon-32x32.png" />
+    <Content Include="Content\Favicon\favicon-96x96.png" />
+    <Content Include="Content\Favicon\favicon.ico" />
+    <Content Include="Content\Favicon\ms-icon-144x144.png" />
+    <Content Include="Content\Favicon\ms-icon-150x150.png" />
+    <Content Include="Content\Favicon\ms-icon-310x310.png" />
+    <Content Include="Content\Favicon\ms-icon-70x70.png" />
+    <Content Include="Content\font-awesome\Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\font-awesome\css\font-awesome.css" />
+    <Content Include="Content\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\gritter\css\jquery.gritter.css" />
+    <Content Include="Content\gritter\images\gritter-light.png" />
+    <Content Include="Content\gritter\images\gritter.png" />
+    <Content Include="Content\gritter\images\ie-spacer.gif" />
+    <Content Include="Content\gritter\js\jquery.gritter.js" />
+    <Content Include="Content\highcharts\gfx\vml-radial-gradient.png" />
+    <Content Include="Content\highcharts\js\adapters\standalone-framework.js" />
+    <Content Include="Content\highcharts\js\adapters\standalone-framework.src.js" />
+    <Content Include="Content\highcharts\js\highcharts-3d.js" />
+    <Content Include="Content\highcharts\js\highcharts-3d.src.js" />
+    <Content Include="Content\highcharts\js\highcharts-more.js" />
+    <Content Include="Content\highcharts\js\highcharts-more.src.js" />
+    <Content Include="Content\highcharts\js\highcharts.js" />
+    <Content Include="Content\highcharts\js\highcharts.src.js" />
+    <Content Include="Content\highcharts\js\modules\broken-axis.js" />
+    <Content Include="Content\highcharts\js\modules\broken-axis.src.js" />
+    <Content Include="Content\highcharts\js\modules\canvas-tools.js" />
+    <Content Include="Content\highcharts\js\modules\canvas-tools.src.js" />
+    <Content Include="Content\highcharts\js\modules\data.js" />
+    <Content Include="Content\highcharts\js\modules\data.src.js" />
+    <Content Include="Content\highcharts\js\modules\drilldown.js" />
+    <Content Include="Content\highcharts\js\modules\drilldown.src.js" />
+    <Content Include="Content\highcharts\js\modules\exporting.js" />
+    <Content Include="Content\highcharts\js\modules\exporting.src.js" />
+    <Content Include="Content\highcharts\js\modules\funnel.js" />
+    <Content Include="Content\highcharts\js\modules\funnel.src.js" />
+    <Content Include="Content\highcharts\js\modules\heatmap.js" />
+    <Content Include="Content\highcharts\js\modules\heatmap.src.js" />
+    <Content Include="Content\highcharts\js\modules\no-data-to-display.js" />
+    <Content Include="Content\highcharts\js\modules\no-data-to-display.src.js" />
+    <Content Include="Content\highcharts\js\modules\solid-gauge.js" />
+    <Content Include="Content\highcharts\js\modules\solid-gauge.src.js" />
+    <Content Include="Content\highcharts\js\modules\treemap.js" />
+    <Content Include="Content\highcharts\js\modules\treemap.src.js" />
+    <Content Include="Content\highcharts\js\themes\dark-blue.js" />
+    <Content Include="Content\highcharts\js\themes\dark-green.js" />
+    <Content Include="Content\highcharts\js\themes\dark-unica.js" />
+    <Content Include="Content\highcharts\js\themes\gray.js" />
+    <Content Include="Content\highcharts\js\themes\grid-light.js" />
+    <Content Include="Content\highcharts\js\themes\grid.js" />
+    <Content Include="Content\highcharts\js\themes\sand-signika.js" />
+    <Content Include="Content\highcharts\js\themes\skies.js" />
+    <Content Include="Content\imagens\brasao.png" />
+    <Content Include="Content\imagens\heja.jpg" />
+    <Content Include="Content\imagens\hma.jpg" />
+    <Content Include="Content\imagens\hurso.jpg" />
+    <Content Include="Content\imagens\logo-ibgh.jpg" />
+    <Content Include="Content\imagens\LogoVoz.jpg" />
+    <Content Include="Content\imagens\piri.jpg" />
+    <Content Include="Content\imagens\piri_OLD.jpg" />
+    <Content Include="Content\imagens\segplan_governo.png" />
+    <Content Include="Content\imagens\segplan_governo_transparente.png" />
+    <Content Include="Content\imagens\upa.jpg" />
+    <Content Include="Content\images\check_black.png" />
+    <Content Include="Content\images\check_indeterminate_black.png" />
+    <Content Include="Content\images\close.png" />
+    <Content Include="Content\images\drag.png" />
+    <Content Include="Content\images\dragcancel.png" />
+    <Content Include="Content\images\filter.png" />
+    <Content Include="Content\images\icon-down.png" />
+    <Content Include="Content\images\icon-left.png" />
+    <Content Include="Content\images\icon-right.png" />
+    <Content Include="Content\images\icon-up.png" />
+    <Content Include="Content\images\loader.gif" />
+    <Content Include="Content\images\sortasc.png" />
+    <Content Include="Content\images\sortdesc.png" />
+    <Content Include="Content\images\sortremove.png" />
+    <Content Include="Content\jqbase\globalization\globalize.culture.pt-BR.js" />
+    <Content Include="Content\jqbase\globalization\globalize.js" />
+    <Content Include="Content\jqbase\jqx-all.js" />
+    <Content Include="Content\jqbase\jqxbulletchart.js" />
+    <Content Include="Content\jqbase\jqxbuttons.js" />
+    <Content Include="Content\jqbase\jqxcalendar.js" />
+    <Content Include="Content\jqbase\jqxchart.core.js" />
+    <Content Include="Content\jqbase\jqxchart.rangeselector.js" />
+    <Content Include="Content\jqbase\jqxcheckbox.js" />
+    <Content Include="Content\jqbase\jqxcombobox.js" />
+    <Content Include="Content\jqbase\jqxcore.js" />
+    <Content Include="Content\jqbase\jqxdata.export.js" />
+    <Content Include="Content\jqbase\jqxdata.js" />
+    <Content Include="Content\jqbase\jqxdatatable.js" />
+    <Content Include="Content\jqbase\jqxdatetimeinput.js" />
+    <Content Include="Content\jqbase\jqxdraw.js" />
+    <Content Include="Content\jqbase\jqxdropdownlist.js" />
+    <Content Include="Content\jqbase\jqxeditor.js" />
+    <Content Include="Content\jqbase\jqxgrid.aggregates.js" />
+    <Content Include="Content\jqbase\jqxgrid.columnsreorder.js" />
+    <Content Include="Content\jqbase\jqxgrid.columnsresize.js" />
+    <Content Include="Content\jqbase\jqxgrid.edit.js" />
+    <Content Include="Content\jqbase\jqxgrid.export.js" />
+    <Content Include="Content\jqbase\jqxgrid.filter.js" />
+    <Content Include="Content\jqbase\jqxgrid.grouping.js" />
+    <Content Include="Content\jqbase\jqxgrid.js" />
+    <Content Include="Content\jqbase\jqxgrid.pager.js" />
+    <Content Include="Content\jqbase\jqxgrid.selection.js" />
+    <Content Include="Content\jqbase\jqxgrid.sort.js" />
+    <Content Include="Content\jqbase\jqxgrid.storage.js" />
+    <Content Include="Content\jqbase\jqxinput.js" />
+    <Content Include="Content\jqbase\jqxlistbox.js" />
+    <Content Include="Content\jqbase\jqxmenu.js" />
+    <Content Include="Content\jqbase\jqxnumberinput.js" />
+    <Content Include="Content\jqbase\jqxpanel.js" />
+    <Content Include="Content\jqbase\jqxpasswordinput.js" />
+    <Content Include="Content\jqbase\jqxradiobutton.js" />
+    <Content Include="Content\jqbase\jqxscrollbar.js" />
+    <Content Include="Content\jqbase\jqxslider.js" />
+    <Content Include="Content\jqbase\jqxtree.js" />
+    <Content Include="Content\jqbase\jqxtreegrid.js" />
+    <Content Include="Content\jqbase\jqxvalidator.js" />
+    <Content Include="Content\jqbase\styles\images\close.png" />
+    <Content Include="Content\jqbase\styles\images\drag.png" />
+    <Content Include="Content\jqbase\styles\images\dragcancel.png" />
+    <Content Include="Content\jqbase\styles\images\filter.png" />
+    <Content Include="Content\jqbase\styles\images\icon-down.png" />
+    <Content Include="Content\jqbase\styles\images\icon-left.png" />
+    <Content Include="Content\jqbase\styles\images\icon-right.png" />
+    <Content Include="Content\jqbase\styles\images\icon-up.png" />
+    <Content Include="Content\jqbase\styles\images\loader.gif" />
+    <Content Include="Content\jqbase\styles\images\sortasc.png" />
+    <Content Include="Content\jqbase\styles\images\sortdesc.png" />
+    <Content Include="Content\jqbase\styles\images\sortremove.png" />
+    <Content Include="Content\jqbase\styles\jqx.base.css" />
+    <Content Include="Content\jquery-block\jquery.blockUI.js" />
+    <Content Include="Content\jquery-cookie\jquery.cookie.js" />
+    <Content Include="Content\jquery-download\FileSaver.js" />
+    <Content Include="Content\jquery-maskMoney\jquery.maskMoney.js" />
+    <Content Include="Content\jquery-maxLength\jquery.maxlength.min.js" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\animated-overlay___.gif" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\jquery-ui\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\jquery-ui\ui\minified\jquery-ui.min.js" />
+    <Content Include="Content\jquery-upload\css\fileinput.css" />
+    <Content Include="Content\jquery-upload\css\fileinput.min.css" />
+    <Content Include="Content\jquery-upload\img\loading-sm.gif" />
+    <Content Include="Content\jquery-upload\img\loading.gif" />
+    <Content Include="Content\jquery-upload\js\fileinput.js" />
+    <Content Include="Content\jquery-upload\js\fileinput.min.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_cz.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_de.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_el.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_es.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_fr.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_hu.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_it.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_LANG.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_nl.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_pl.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_pt-BR.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_pt.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_ro.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_ru.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_sk.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_sr.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_th.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_tr.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_uk.js" />
+    <Content Include="Content\jquery-upload\js\fileinput_locale_zh.js" />
+    <Content Include="Content\jquery\jquery-1.9.1.min.js" />
+    <Content Include="Content\jquery\jquery-migrate-1.1.0.min.js" />
+    <Content Include="Content\loginform\css\bootstrap.min.css" />
+    <Content Include="Content\loginform\css\font-awesome.css" />
+    <Content Include="Content\loginform\css\font-awesome.min.css" />
+    <Content Include="Content\loginform\css\login-padrao.css" />
+    <Content Include="Content\loginform\css\style.css" />
+    <Content Include="Content\loginform\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\loginform\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\loginform\img\34.jpg" />
+    <Content Include="Content\loginform\img\44.jpg" />
+    <Content Include="Content\loginform\img\clk2.png" />
+    <Content Include="Content\loginform\img\colorful.jpg" />
+    <Content Include="Content\loginform\img\images.jpg" />
+    <Content Include="Content\loginform\js\bootstrap.min.js" />
+    <Content Include="Content\loginform\js\jquery.backstretch.js" />
+    <Content Include="Content\loginform\js\jquery.js" />
+    <Content Include="Content\masked-input\masked-input.min.js" />
+    <Content Include="Content\pace\pace.min.js" />
+    <Content Include="Content\parsley\dist\parsley.js" />
+    <Content Include="Content\parsley\src\parsley.css" />
+    <Content Include="Content\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Content\white\css\application.min.css" />
+    <Content Include="Content\white\css\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\white\css\fonts\font-awesome\fontawesome-webfont.svg" />
+    <Content Include="Content\white\css\segplan.css" />
+    <Content Include="Content\white\css\style.min.css" />
+    <Content Include="Content\white\css\util.css" />
+    <Content Include="Content\white\img\favicon.png" />
+    <Content Include="Content\white\img\governo_goias_branco.png" />
+    <Content Include="Content\white\img\logo-goias-sombra-branca.png" />
+    <Content Include="Content\white\img\logo-goias.png" />
+    <Content Include="Content\white\img\logo-portal-branco-completo-2.png" />
+    <Content Include="Content\white\img\logo-portal-branco-completo.png" />
+    <Content Include="Content\white\img\logo-scti-1.png" />
+    <Content Include="Content\white\img\logo-scti-60h.png" />
+    <Content Include="Content\white\img\logo-scti-v1.png" />
+    <Content Include="Content\white\img\logo-segplan.png" />
+    <Content Include="Content\white\img\logo.png" />
+    <Content Include="Content\white\img\search-white.png" />
+    <Content Include="Content\white\img\search.png" />
+    <Content Include="Content\yeapp\bower_components\ascolor\dist\jquery-asColor.min.js" />
+    <Content Include="Content\yeapp\bower_components\asspinner\dist\jquery-asSpinner.min.js" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-datepicker\dist\css\bootstrap-datepicker3.min.css" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-datepicker\dist\js\bootstrap-datepicker.min.js" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-markdown\css\bootstrap-markdown.min.css" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-markdown\js\bootstrap-markdown.js" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-select\dist\js\bootstrap-select.min.js" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-sweetalert\lib\sweet-alert.css" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-sweetalert\lib\sweet-alert.min.js" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-table\dist\bootstrap-table.min.css" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-table\dist\bootstrap-table.min.js" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-tagsinput\dist\bootstrap-tagsinput.min.js" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-tokenfield\dist\bootstrap-tokenfield.min.js" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-touchspin\dist\jquery.bootstrap-touchspin.min.js" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-treeview\dist\bootstrap-treeview.min.css" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-treeview\dist\bootstrap-treeview.min.js" />
+    <Content Include="Content\yeapp\bower_components\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Content\yeapp\bower_components\Chart.js\Chart.min.js" />
+    <Content Include="Content\yeapp\bower_components\chartist\dist\chartist.min.css" />
+    <Content Include="Content\yeapp\bower_components\chartist\dist\chartist.min.js" />
+    <Content Include="Content\yeapp\bower_components\clockpicker\dist\bootstrap-clockpicker.min.js" />
+    <Content Include="Content\yeapp\bower_components\cropper\dist\cropper.min.css" />
+    <Content Include="Content\yeapp\bower_components\cropper\dist\cropper.min.js" />
+    <Content Include="Content\yeapp\bower_components\d3\d3.min.js" />
+    <Content Include="Content\yeapp\bower_components\datatables.net\js\jquery.dataTables.min.js" />
+    <Content Include="Content\yeapp\bower_components\datepair.js\dist\datepair.min.js" />
+    <Content Include="Content\yeapp\bower_components\datepair.js\dist\jquery.datepair.min.js" />
+    <Content Include="Content\yeapp\bower_components\dragula.js\dist\dragula.min.css" />
+    <Content Include="Content\yeapp\bower_components\dragula.js\dist\dragula.min.js" />
+    <Content Include="Content\yeapp\bower_components\dropzone\dist\min\dropzone.min.css" />
+    <Content Include="Content\yeapp\bower_components\dropzone\dist\min\dropzone.min.js" />
+    <Content Include="Content\yeapp\bower_components\filament-tablesaw\dist\tablesaw-init.js" />
+    <Content Include="Content\yeapp\bower_components\filament-tablesaw\dist\tablesaw.css" />
+    <Content Include="Content\yeapp\bower_components\filament-tablesaw\dist\tablesaw.js" />
+    <Content Include="Content\yeapp\bower_components\flot.tooltip\js\jquery.flot.tooltip.min.js" />
+    <Content Include="Content\yeapp\bower_components\flot\jquery.flot.crosshair.js" />
+    <Content Include="Content\yeapp\bower_components\flot\jquery.flot.js" />
+    <Content Include="Content\yeapp\bower_components\flot\jquery.flot.pie.js" />
+    <Content Include="Content\yeapp\bower_components\flot\jquery.flot.resize.js" />
+    <Content Include="Content\yeapp\bower_components\flot\jquery.flot.selection.js" />
+    <Content Include="Content\yeapp\bower_components\flot\jquery.flot.stack.js" />
+    <Content Include="Content\yeapp\bower_components\flot\jquery.flot.time.js" />
+    <Content Include="Content\yeapp\bower_components\footable\css\fonts\footable.svg" />
+    <Content Include="Content\yeapp\bower_components\footable\css\footable.core.min.css" />
+    <Content Include="Content\yeapp\bower_components\footable\dist\footable.all.min.js" />
+    <Content Include="Content\yeapp\bower_components\fullcalendar\dist\fullcalendar.min.css" />
+    <Content Include="Content\yeapp\bower_components\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="Content\yeapp\bower_components\gmaps\gmaps.min.js" />
+    <Content Include="Content\yeapp\bower_components\ion.rangeslider\css\ion.rangeSlider.css" />
+    <Content Include="Content\yeapp\bower_components\ion.rangeslider\css\ion.rangeSlider.skinFlat.css" />
+    <Content Include="Content\yeapp\bower_components\ion.rangeslider\img\sprite-skin-flat.png" />
+    <Content Include="Content\yeapp\bower_components\ion.rangeslider\js\ion.rangeSlider.min.js" />
+    <Content Include="Content\yeapp\bower_components\jquery-knob\dist\jquery.knob.min.js" />
+    <Content Include="Content\yeapp\bower_components\jquery-labelauty\source\jquery-labelauty.js" />
+    <Content Include="Content\yeapp\bower_components\jquery-placeholder\jquery.placeholder.min.js" />
+    <Content Include="Content\yeapp\bower_components\jquery.easy-pie-chart\dist\jquery.easypiechart.min.js" />
+    <Content Include="Content\yeapp\bower_components\jquery.ripple\jquery.ripple.js" />
+    <Content Include="Content\yeapp\bower_components\jquery\dist\jquery.min.js" />
+    <Content Include="Content\yeapp\bower_components\jt.timepicker\jquery.timepicker.min.js" />
+    <Content Include="Content\yeapp\bower_components\markdown\lib\markdown.js" />
+    <Content Include="Content\yeapp\bower_components\moment\min\moment-with-locales.min.js" />
+    <Content Include="Content\yeapp\bower_components\moment\min\moment.min.js" />
+    <Content Include="Content\yeapp\bower_components\morris.js\morris.css" />
+    <Content Include="Content\yeapp\bower_components\morris.js\morris.min.js" />
+    <Content Include="Content\yeapp\bower_components\multi-select\img\switch.png" />
+    <Content Include="Content\yeapp\bower_components\multi-select\js\jquery.multi-select.js" />
+    <Content Include="Content\yeapp\bower_components\nvd3\build\nv.d3.min.css" />
+    <Content Include="Content\yeapp\bower_components\nvd3\build\nv.d3.min.js" />
+    <Content Include="Content\yeapp\bower_components\owl.carousel\dist\assets\owl.carousel.min.css" />
+    <Content Include="Content\yeapp\bower_components\owl.carousel\dist\assets\owl.theme.green.css" />
+    <Content Include="Content\yeapp\bower_components\owl.carousel\dist\assets\owl.video.play.png" />
+    <Content Include="Content\yeapp\bower_components\owl.carousel\dist\owl.carousel.min.js" />
+    <Content Include="Content\yeapp\bower_components\pace\pace.min.js" />
+    <Content Include="Content\yeapp\bower_components\parsleyjs\dist\parsley.min.js" />
+    <Content Include="Content\yeapp\bower_components\peity\jquery.peity.min.js" />
+    <Content Include="Content\yeapp\bower_components\raphael\raphael-min.js" />
+    <Content Include="Content\yeapp\bower_components\rickshaw\rickshaw.min.css" />
+    <Content Include="Content\yeapp\bower_components\rickshaw\rickshaw.min.js" />
+    <Content Include="Content\yeapp\bower_components\rickshaw\vendor\d3.layout.min.js" />
+    <Content Include="Content\yeapp\bower_components\RWD-Table-Patterns\dist\css\rwd-table.min.css" />
+    <Content Include="Content\yeapp\bower_components\RWD-Table-Patterns\dist\js\rwd-table.min.js" />
+    <Content Include="Content\yeapp\bower_components\seiyria-bootstrap-slider\dist\bootstrap-slider.min.js" />
+    <Content Include="Content\yeapp\bower_components\seiyria-bootstrap-slider\dist\css\bootstrap-slider.min.css" />
+    <Content Include="Content\yeapp\bower_components\select2\dist\css\select2.min.css" />
+    <Content Include="Content\yeapp\bower_components\select2\dist\js\select2.full.min.js" />
+    <Content Include="Content\yeapp\bower_components\slick-carousel\slick\ajax-loader__.gif" />
+    <Content Include="Content\yeapp\bower_components\slick-carousel\slick\fonts\slick.svg" />
+    <Content Include="Content\yeapp\bower_components\slick-carousel\slick\slick-theme.css" />
+    <Content Include="Content\yeapp\bower_components\slick-carousel\slick\slick.css" />
+    <Content Include="Content\yeapp\bower_components\slick-carousel\slick\slick.min.js" />
+    <Content Include="Content\yeapp\bower_components\summernote\dist\summernote.css" />
+    <Content Include="Content\yeapp\bower_components\summernote\dist\summernote.min.js" />
+    <Content Include="Content\yeapp\bower_components\tether\dist\js\tether.min.js" />
+    <Content Include="Content\yeapp\bower_components\toastr\toastr.min.css" />
+    <Content Include="Content\yeapp\bower_components\toastr\toastr.min.js" />
+    <Content Include="Content\yeapp\bower_components\typeahead.js\dist\bloodhound.min.js" />
+    <Content Include="Content\yeapp\bower_components\typeahead.js\dist\typeahead.jquery.min.js" />
+    <Content Include="Content\yeapp\bower_components\underscore-observable-arrays\underscore-observe.js" />
+    <Content Include="Content\yeapp\bower_components\underscore\underscore-min.js" />
+    <Content Include="Content\yeapp\bower_components\x-editable\dist\bootstrap3-editable\css\bootstrap-editable.css" />
+    <Content Include="Content\yeapp\bower_components\x-editable\dist\bootstrap3-editable\img\clear.png" />
+    <Content Include="Content\yeapp\bower_components\x-editable\dist\bootstrap3-editable\img\loading.gif" />
+    <Content Include="Content\yeapp\bower_components\x-editable\dist\bootstrap3-editable\js\bootstrap-editable.js" />
+    <Content Include="Content\yeapp\css\animate.css" />
+    <Content Include="Content\yeapp\css\app.css" />
+    <Content Include="Content\yeapp\fonts\opensans\font.css" />
+    <Content Include="Content\yeapp\fonts\opensans\fontawesome-webfont.svg" />
+    <Content Include="Content\yeapp\icons\font-awesome-4.2.0\css\font-awesome.css" />
+    <Content Include="Content\yeapp\icons\font-awesome-4.2.0\css\font-awesome.min.css" />
+    <Content Include="Content\yeapp\icons\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\yeapp\icons\glyphicons\glyphicon.css" />
+    <Content Include="Content\yeapp\icons\glyphicons\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\yeapp\img\avatar1.jpg" />
+    <Content Include="Content\yeapp\img\avatar2.jpg" />
+    <Content Include="Content\yeapp\img\avatar3.jpg" />
+    <Content Include="Content\yeapp\img\avatar4.jpg" />
+    <Content Include="Content\yeapp\img\avatar5.jpg" />
+    <Content Include="Content\yeapp\img\avatar6.jpg" />
+    <Content Include="Content\yeapp\img\avatar7.jpg" />
+    <Content Include="Content\yeapp\img\avatar8.jpg" />
+    <Content Include="Content\yeapp\img\avatar9.jpg" />
+    <Content Include="Content\yeapp\img\big_avatar.jpg" />
+    <Content Include="Content\yeapp\img\big_avatar2.jpg" />
+    <Content Include="Content\yeapp\img\dotted.png" />
+    <Content Include="Content\yeapp\img\dummy1.jpg" />
+    <Content Include="Content\yeapp\img\dummy2.jpg" />
+    <Content Include="Content\yeapp\img\dummy3.jpg" />
+    <Content Include="Content\yeapp\img\dummy4.jpg" />
+    <Content Include="Content\yeapp\img\dummy5.jpg" />
+    <Content Include="Content\yeapp\img\gallery\card1.jpg" />
+    <Content Include="Content\yeapp\img\gallery\card2.jpg" />
+    <Content Include="Content\yeapp\img\gallery\cover2.jpg" />
+    <Content Include="Content\yeapp\img\gallery\cover3.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy1.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy10.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy11.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy12.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy13.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy15.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy2.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy3.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy4.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy5.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy6.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy7.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy8.jpg" />
+    <Content Include="Content\yeapp\img\gallery\dummy9.jpg" />
+    <Content Include="Content\yeapp\img\linear_gradient.png" />
+    <Content Include="Content\yeapp\img\logos\yeapp-logo-folded.png" />
+    <Content Include="Content\yeapp\img\logos\yeapp-logo-xs.png" />
+    <Content Include="Content\yeapp\img\logos\yeapp-logo.png" />
+    <Content Include="Content\yeapp\img\logos\yeapp_logo_big.png" />
+    <Content Include="Content\yeapp\img\london.jpg" />
+    <Content Include="Content\yeapp\img\preloader.gif" />
+    <Content Include="Content\yeapp\img\product1.jpg" />
+    <Content Include="Content\yeapp\img\product2.jpg" />
+    <Content Include="Content\yeapp\img\product3.jpg" />
+    <Content Include="Content\yeapp\img\product4.jpg" />
+    <Content Include="Content\yeapp\img\product5.jpg" />
+    <Content Include="Content\yeapp\img\product6.jpg" />
+    <Content Include="Content\yeapp\img\progress\progress-bar-master.svg" />
+    <Content Include="Content\yeapp\img\progress\progress-circle-master.svg" />
+    <Content Include="Content\yeapp\img\small_avatar.jpg" />
+    <Content Include="Content\yeapp\img\yeapp_blurred.jpg" />
+    <Content Include="Content\yeapp\scripts\app.demo.js" />
+    <Content Include="Content\yeapp\scripts\app.js" />
+    <Content Include="Content\yeapp\scripts\app.material.ripple.js" />
+    <Content Include="Content\yeapp\scripts\calendar\calendar.js" />
+    <Content Include="Content\yeapp\scripts\charts\chartist.js" />
+    <Content Include="Content\yeapp\scripts\charts\chartjs.js" />
+    <Content Include="Content\yeapp\scripts\charts\flot.js" />
+    <Content Include="Content\yeapp\scripts\charts\morris.js" />
+    <Content Include="Content\yeapp\scripts\charts\nvd3.js" />
+    <Content Include="Content\yeapp\scripts\charts\peity.js" />
+    <Content Include="Content\yeapp\scripts\charts\rickshaw.js" />
+    <Content Include="Content\yeapp\scripts\charts\sparkline.js" />
+    <Content Include="Content\yeapp\scripts\dashboard\dashboard.v1.js" />
+    <Content Include="Content\yeapp\scripts\dashboard\dashboard.v2.js" />
+    <Content Include="Content\yeapp\scripts\dashboard\dashboard.v3.js" />
+    <Content Include="Content\yeapp\scripts\extra\project.js" />
+    <Content Include="Content\yeapp\scripts\extra\widgets.js" />
+    <Content Include="Content\yeapp\scripts\forms\advanced.js" />
+    <Content Include="Content\yeapp\scripts\forms\editable.js" />
+    <Content Include="Content\yeapp\scripts\forms\editors.js" />
+    <Content Include="Content\yeapp\scripts\forms\imagecrop.js" />
+    <Content Include="Content\yeapp\scripts\forms\wizard-alt.js" />
+    <Content Include="Content\yeapp\scripts\maps\google.js" />
+    <Content Include="Content\yeapp\scripts\maps\vector.js" />
+    <Content Include="Content\yeapp\scripts\pages\profile.js" />
+    <Content Include="Content\yeapp\scripts\tables\bootstrap.js" />
+    <Content Include="Content\yeapp\scripts\tables\datatable.js" />
+    <Content Include="Content\yeapp\scripts\tables\editable.js" />
+    <Content Include="Content\yeapp\scripts\tables\footable.js" />
+    <Content Include="Content\yeapp\scripts\tables\responsive.js" />
+    <Content Include="Content\yeapp\scripts\ui-components\alerts-notifications.js" />
+    <Content Include="Content\yeapp\scripts\ui-components\carousel.js" />
+    <Content Include="Content\yeapp\scripts\ui-components\modal.js" />
+    <Content Include="Content\yeapp\scripts\ui-components\portlet.js" />
+    <Content Include="Content\yeapp\scripts\ui-components\sliders.js" />
+    <Content Include="Content\yeapp\scripts\ui-components\sortable.js" />
+    <Content Include="Content\yeapp\scripts\ui-components\tree.js" />
+    <Content Include="Content\yeapp\vendors\ascolorpicker\css\asColorPicker.css" />
+    <Content Include="Content\yeapp\vendors\ascolorpicker\dist\jquery-asColorPicker.min.js" />
+    <Content Include="Content\yeapp\vendors\ascolorpicker\images\alpha.png" />
+    <Content Include="Content\yeapp\vendors\ascolorpicker\images\hue.png" />
+    <Content Include="Content\yeapp\vendors\ascolorpicker\images\saturation.png" />
+    <Content Include="Content\yeapp\vendors\ascolorpicker\images\transparent.png" />
+    <Content Include="Content\yeapp\vendors\datatable\datatable.bootstrap.min.js" />
+    <Content Include="Content\yeapp\vendors\editable\mindmup-editabletable.js" />
+    <Content Include="Content\yeapp\vendors\flot\jquery.flot.spline.js" />
+    <Content Include="Content\yeapp\vendors\jquery.sparkline\jquery.sparkline.min.js" />
+    <Content Include="Content\yeapp\vendors\nestable\jquery.nestable.css" />
+    <Content Include="Content\yeapp\vendors\nestable\jquery.nestable.js" />
+    <Content Include="Content\yeapp\vendors\vectormap\jquery-jvectormap-2.0.3.css" />
+    <Content Include="Content\yeapp\vendors\vectormap\jquery-jvectormap-2.0.3.min.js" />
+    <Content Include="Content\yeapp\vendors\vectormap\maps\continents.js" />
+    <Content Include="Content\yeapp\vendors\vectormap\maps\northamerica.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Recursos\logo-ibgh.jpg" />
+    <Content Include="Recursos\logoVoz.png" />
+    <Content Include="Scripts\Tykon.login.js" />
+    <Content Include="Scripts\Tykon.principal.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Start\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Inicio.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\exemploApp.Dados\exemploApp.Dados.csproj">
+      <Project>{add378b5-8887-4dd4-8dfd-d6de7e9a1615}</Project>
+      <Name>exemploApp.Dados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\exemploApp.Dominio\exemploApp.Dominio.csproj">
+      <Project>{0e4d926b-49c4-4470-b337-2abca37e9dff}</Project>
+      <Name>exemploApp.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\exemploApp.Servico\exemploApp.Servico.csproj">
+      <Project>{d0829bac-516e-4af8-ad64-16a09c50ea3a}</Project>
+      <Name>exemploApp.Servico</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap\Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap\Content\fonts\glyphicons-halflings-regular.eot_" />
+    <Content Include="Content\bootstrap\Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap\Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.eot_" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\font-awesome\Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\font-awesome\Content\fonts\fontawesome-webfont.eot_" />
+    <Content Include="Content\font-awesome\Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\font-awesome\Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot_" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot_" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\jquery\dist\jquery-migrate.min.map" />
+    <Content Include="Content\white\css\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\white\css\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\white\css\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\white\css\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\white\css\fonts\font-awesome\fontawesome-webfont.eot" />
+    <Content Include="Content\white\css\fonts\font-awesome\fontawesome-webfont.ttf" />
+    <Content Include="Content\white\css\fonts\font-awesome\fontawesome-webfont.woff" />
+    <Content Include="Content\white\css\fonts\font-awesome\fontawesome-webfont.woff2" />
+    <Content Include="Content\white\css\fonts\google\open-sans-bold.woff" />
+    <Content Include="Content\white\css\fonts\google\open-sans-italic-light.woff" />
+    <Content Include="Content\white\css\fonts\google\open-sans-italic.woff" />
+    <Content Include="Content\white\css\fonts\google\open-sans-light.woff" />
+    <Content Include="Content\white\css\fonts\google\open-sans-semibold.woff" />
+    <Content Include="Content\white\css\fonts\google\open-sans.woff" />
+    <Content Include="Content\white\img\favicon.png_bkp" />
+    <Content Include="Content\amaretti\assets\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\amaretti\assets\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\amaretti\assets\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\amaretti\assets\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\amaretti\assets\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\amaretti\assets\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\amaretti\assets\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\amaretti\assets\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\bold-italic\opensans-bold-italic-webfont.eot" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\bold-italic\opensans-bold-italic-webfont.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\bold-italic\opensans-bold-italic-webfont.ttf" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\bold-italic\opensans-bold-italic-webfont.woff" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\bold\opensans-bold-webfont.eot" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\bold\opensans-bold-webfont.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\bold\opensans-bold-webfont.ttf" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\bold\opensans-bold-webfont.woff" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\extrabold-italic\opensans-extrabold-italic-webfont.eot" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\extrabold-italic\opensans-extrabold-italic-webfont.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\extrabold-italic\opensans-extrabold-italic-webfont.ttf" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\extrabold-italic\opensans-extrabold-italic-webfont.woff" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\extrabold\opensans-extrabold-webfont.eot" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\extrabold\opensans-extrabold-webfont.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\extrabold\opensans-extrabold-webfont.ttf" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\extrabold\opensans-extrabold-webfont.woff" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\italic\opensans-italic-webfont.eot" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\italic\opensans-italic-webfont.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\italic\opensans-italic-webfont.ttf" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\italic\opensans-italic-webfont.woff" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\light-italic\opensans-light-italic-webfont.eot" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\light-italic\opensans-light-italic-webfont.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\light-italic\opensans-light-italic-webfont.ttf" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\light-italic\opensans-light-italic-webfont.woff" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\light\opensans-light-webfont.eot" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\light\opensans-light-webfont.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\light\opensans-light-webfont.ttf" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\light\opensans-light-webfont.woff" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\regular\opensans-regular-webfont.eot" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\regular\opensans-regular-webfont.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\regular\opensans-regular-webfont.ttf" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\regular\opensans-regular-webfont.woff" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\semibold-italic\opensans-semibold-italic-webfont.eot" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\semibold-italic\opensans-semibold-italic-webfont.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\semibold-italic\opensans-semibold-italic-webfont.ttf" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\semibold-italic\opensans-semibold-italic-webfont.woff" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\semibold\opensans-semibold-webfont.eot" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\semibold\opensans-semibold-webfont.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\semibold\opensans-semibold-webfont.ttf" />
+    <Content Include="Content\amaretti\assets\lib\open-sans\semibold\opensans-semibold-webfont.woff" />
+    <Content Include="Content\amaretti\assets\lib\raleway\bold\raleway-bold.eot" />
+    <Content Include="Content\amaretti\assets\lib\raleway\bold\raleway-bold.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\raleway\bold\raleway-bold.ttf" />
+    <Content Include="Content\amaretti\assets\lib\raleway\bold\raleway-bold.woff" />
+    <Content Include="Content\amaretti\assets\lib\raleway\extrabold\raleway-extrabold.eot" />
+    <Content Include="Content\amaretti\assets\lib\raleway\extrabold\raleway-extrabold.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\raleway\extrabold\raleway-extrabold.ttf" />
+    <Content Include="Content\amaretti\assets\lib\raleway\extrabold\raleway-extrabold.woff" />
+    <Content Include="Content\amaretti\assets\lib\raleway\extralight\raleway-extralight.eot" />
+    <Content Include="Content\amaretti\assets\lib\raleway\extralight\raleway-extralight.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\raleway\extralight\raleway-extralight.ttf" />
+    <Content Include="Content\amaretti\assets\lib\raleway\extralight\raleway-extralight.woff" />
+    <Content Include="Content\amaretti\assets\lib\raleway\heavy\raleway-heavy.eot" />
+    <Content Include="Content\amaretti\assets\lib\raleway\heavy\raleway-heavy.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\raleway\heavy\raleway-heavy.ttf" />
+    <Content Include="Content\amaretti\assets\lib\raleway\heavy\raleway-heavy.woff" />
+    <Content Include="Content\amaretti\assets\lib\raleway\light\raleway-light.eot" />
+    <Content Include="Content\amaretti\assets\lib\raleway\light\raleway-light.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\raleway\light\raleway-light.ttf" />
+    <Content Include="Content\amaretti\assets\lib\raleway\light\raleway-light.woff" />
+    <Content Include="Content\amaretti\assets\lib\raleway\medium\raleway-medium.eot" />
+    <Content Include="Content\amaretti\assets\lib\raleway\medium\raleway-medium.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\raleway\medium\raleway-medium.ttf" />
+    <Content Include="Content\amaretti\assets\lib\raleway\medium\raleway-medium.woff" />
+    <Content Include="Content\amaretti\assets\lib\raleway\regular\raleway-regular.eot" />
+    <Content Include="Content\amaretti\assets\lib\raleway\regular\raleway-regular.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\raleway\regular\raleway-regular.ttf" />
+    <Content Include="Content\amaretti\assets\lib\raleway\regular\raleway-regular.woff" />
+    <Content Include="Content\amaretti\assets\lib\raleway\semibold\raleway-semibold.eot" />
+    <Content Include="Content\amaretti\assets\lib\raleway\semibold\raleway-semibold.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\raleway\semibold\raleway-semibold.ttf" />
+    <Content Include="Content\amaretti\assets\lib\raleway\semibold\raleway-semibold.woff" />
+    <Content Include="Content\amaretti\assets\lib\raleway\thin\raleway-thin.eot" />
+    <Content Include="Content\amaretti\assets\lib\raleway\thin\raleway-thin.eot%40" />
+    <Content Include="Content\amaretti\assets\lib\raleway\thin\raleway-thin.ttf" />
+    <Content Include="Content\amaretti\assets\lib\raleway\thin\raleway-thin.woff" />
+    <Content Include="Content\amaretti\assets\lib\stroke-7\fonts\Stroke-7.eot" />
+    <Content Include="Content\amaretti\assets\lib\stroke-7\fonts\Stroke-7.ttf" />
+    <Content Include="Content\amaretti\assets\lib\stroke-7\fonts\Stroke-7.woff" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-datepicker\dist\css\bootstrap-datepicker3.standalone.min.css%40v2.1.0" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-select\dist\css\bootstrap-select.min.css%40v2.1.0" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-tagsinput\dist\bootstrap-tagsinput.css%40v2.1.0" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-tokenfield\dist\css\bootstrap-tokenfield.min.css%40v2.1.0" />
+    <Content Include="Content\yeapp\bower_components\bootstrap-touchspin\dist\jquery.bootstrap-touchspin.min.css%40v2.1.0" />
+    <Content Include="Content\yeapp\bower_components\clockpicker\dist\bootstrap-clockpicker.min.css%40v2.1.0" />
+    <Content Include="Content\yeapp\bower_components\footable\css\fonts\footable.eot" />
+    <Content Include="Content\yeapp\bower_components\footable\css\fonts\footable.eot%40" />
+    <Content Include="Content\yeapp\bower_components\footable\css\fonts\footable.ttf" />
+    <Content Include="Content\yeapp\bower_components\footable\css\fonts\footable.woff" />
+    <Content Include="Content\yeapp\bower_components\jt.timepicker\jquery.timepicker.css%40v2.1.0" />
+    <Content Include="Content\yeapp\bower_components\multi-select\css\multi-select.css%40v2.1.0" />
+    <Content Include="Content\yeapp\bower_components\slick-carousel\slick\fonts\slick.eot" />
+    <Content Include="Content\yeapp\bower_components\slick-carousel\slick\fonts\slick.eot%40" />
+    <Content Include="Content\yeapp\bower_components\slick-carousel\slick\fonts\slick.ttf" />
+    <Content Include="Content\yeapp\bower_components\slick-carousel\slick\fonts\slick.woff" />
+    <Content Include="Content\yeapp\bower_components\summernote\dist\font\summernote.eot%40" />
+    <Content Include="Content\yeapp\bower_components\summernote\dist\font\summernote.eot%40ad8d7e2d177d2473aecd9b35d16211fb" />
+    <Content Include="Content\yeapp\bower_components\summernote\dist\font\summernote.ttf%40ad8d7e2d177d2473aecd9b35d16211fb" />
+    <Content Include="Content\yeapp\bower_components\summernote\dist\font\summernote.woff%40ad8d7e2d177d2473aecd9b35d16211fb" />
+    <Content Include="Content\yeapp\fonts\opensans\OpenSans-Bold-ext.woff2" />
+    <Content Include="Content\yeapp\fonts\opensans\OpenSans-Bold.ttf" />
+    <Content Include="Content\yeapp\fonts\opensans\OpenSans-Bold.woff2" />
+    <Content Include="Content\yeapp\fonts\opensans\OpenSans-ext.woff2" />
+    <Content Include="Content\yeapp\fonts\opensans\OpenSans-Light-ext.woff2" />
+    <Content Include="Content\yeapp\fonts\opensans\OpenSans-Light.ttf" />
+    <Content Include="Content\yeapp\fonts\opensans\OpenSans-Light.woff2" />
+    <Content Include="Content\yeapp\fonts\opensans\OpenSans-Semibold-ext.woff2" />
+    <Content Include="Content\yeapp\fonts\opensans\OpenSans-Semibold.ttf" />
+    <Content Include="Content\yeapp\fonts\opensans\OpenSans-Semibold.woff2" />
+    <Content Include="Content\yeapp\fonts\opensans\OpenSans.woff2" />
+    <Content Include="Content\yeapp\icons\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\yeapp\icons\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\yeapp\icons\font-awesome-4.2.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\yeapp\icons\glyphicons\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\yeapp\icons\glyphicons\glyphicons-halflings-regular.eot%40" />
+    <Content Include="Content\yeapp\icons\glyphicons\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\yeapp\icons\glyphicons\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\yeapp\icons\glyphicons\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\loginform\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\loginform\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\loginform\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\loginform\fonts\FontAwesome.otf" />
+    <Content Include="Content\loginform\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\loginform\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\loginform\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Favicon\manifest.json" />
+    <Content Include="Content\font-awesome\Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\font-awesome\Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\font-awesome\less\animated.less" />
+    <Content Include="Content\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Content\font-awesome\less\core.less" />
+    <Content Include="Content\font-awesome\less\fixed-width.less" />
+    <Content Include="Content\font-awesome\less\font-awesome.less" />
+    <Content Include="Content\font-awesome\less\icons.less" />
+    <Content Include="Content\font-awesome\less\larger.less" />
+    <Content Include="Content\font-awesome\less\list.less" />
+    <Content Include="Content\font-awesome\less\mixins.less" />
+    <Content Include="Content\font-awesome\less\path.less" />
+    <Content Include="Content\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Content\font-awesome\less\screen-reader.less" />
+    <Content Include="Content\font-awesome\less\stacked.less" />
+    <Content Include="Content\font-awesome\less\variables.less" />
+    <Content Include="Content\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Content\font-awesome\scss\_animated.scss" />
+    <Content Include="Content\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Content\font-awesome\scss\_core.scss" />
+    <Content Include="Content\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Content\font-awesome\scss\_icons.scss" />
+    <Content Include="Content\font-awesome\scss\_larger.scss" />
+    <Content Include="Content\font-awesome\scss\_list.scss" />
+    <Content Include="Content\font-awesome\scss\_mixins.scss" />
+    <Content Include="Content\font-awesome\scss\_path.scss" />
+    <Content Include="Content\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Content\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="Content\font-awesome\scss\_stacked.scss" />
+    <Content Include="Content\font-awesome\scss\_variables.scss" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\yeapp\fonts\opensans\fontawesome-webfont.eot" />
+    <Content Include="Content\yeapp\fonts\opensans\fontawesome-webfont.ttf" />
+    <Content Include="Content\yeapp\fonts\opensans\fontawesome-webfont.woff" />
+    <Content Include="Content\yeapp\fonts\opensans\fontawesome-webfont.woff2" />
+    <Content Include="Content\yeapp\fonts\opensans\FontAwesome.otf" />
+    <Content Include="Content\yeapp\icons\font-awesome-4.2.0\css\font-awesome.min.css_anterior" />
+    <Content Include="Content\yeapp\icons\font-awesome-4.2.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\yeapp\icons\font-awesome-4.2.0\fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\homologacao.pubxml" />
+    <None Include="Properties\PublishProfiles\producao.pubxml" />
+    <None Include="Properties\PublishProfiles\PubexemploApp.pubxml" />
+    <None Include="Properties\PublishProfiles\PubVD.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Views\Shared\_NomeSistema.cshtml" />
+    <Content Include="Views\Shared\_IconeSistema.cshtml" />
+    <Content Include="Views\Sistema\_FiltroListagem.cshtml" />
+    <Content Include="Views\Sistema\_Editar.cshtml" />
+    <Content Include="Views\Perfil\_Editar.cshtml" />
+    <Content Include="Views\Perfil\_FiltroListagem.cshtml" />
+    <Content Include="Views\Modulo\_FiltroListagem.cshtml" />
+    <Content Include="Views\Modulo\_Editar.cshtml" />
+    <Content Include="Views\Menu\_FiltroListagem.cshtml" />
+    <Content Include="Views\Menu\_Editar.cshtml" />
+    <Content Include="Views\Item\_Editar.cshtml" />
+    <Content Include="Views\Item\_FiltroListagem.cshtml" />
+    <Content Include="Views\Item\_Menus.cshtml" />
+    <Content Include="Views\UsuarioSistema\_FiltroListagem.cshtml" />
+    <Content Include="Views\UsuarioSistema\_Editar.cshtml" />
+    <Content Include="Views\Pessoa\_Editar.cshtml" />
+    <Content Include="Views\Pessoa\_FiltroListagem.cshtml" />
+    <Content Include="Views\UsuarioSistema\_FiltroPesquisaMunicipios.cshtml" />
+    <Content Include="Reports\Contrato\RelatorioContratoDataSet.xsc">
+      <DependentUpon>RelatorioContratoDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\Contrato\RelatorioContratoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelatorioContratoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\Contrato\RelatorioContratoDataSet.xss">
+      <DependentUpon>RelatorioContratoDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\Shared\_LayoutRelatorio.cshtml" />
+    <Content Include="Views\Shared\_LayoutRelatorioReportView.cshtml" />
+    <Content Include="Reports\RegistroMovimento\RelatorioRegistroMovimentoDataSet.xsc">
+      <DependentUpon>RelatorioRegistroMovimentoDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\RegistroMovimentoTaxa\RelatorioRegistroMovimentoTaxaDataSet.xsc">
+      <DependentUpon>RelatorioRegistroMovimentoTaxaDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\RegistroMovimentoDiario\RelatorioRegistroMovimentoDiarioDataSet.xsc">
+      <DependentUpon>RelatorioRegistroMovimentoDiarioDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\RegistroMovimentoDiarioPrevisto\RelatorioRegistroMovimentoDiarioPrevistoDataSet.xsc">
+      <DependentUpon>RelatorioRegistroMovimentoDiarioPrevistoDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\RegistroEvento\RelatorioRegistroEventoDataSet.xsc">
+      <DependentUpon>RelatorioRegistroEventoDataSet.xsd</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Reports\RegistroEvento\RelatorioRegistroEventoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelatorioRegistroEventoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\RegistroEvento\RelatorioRegistroEventoDataSet.xss">
+      <DependentUpon>RelatorioRegistroEventoDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\RegistroMovimentoAnual\RelatorioRegistroMovimentoAnualDataSet.xsc">
+      <DependentUpon>RelatorioRegistroMovimentoAnualDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\RegistroMovimentoFaixa\RelatorioRegistroMovimentoDataSet.xsc">
+      <DependentUpon>RelatorioRegistroMovimentoDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\RegistroMovimentoFaixa\RelatorioRegistroMovimentoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelatorioRegistroMovimentoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\RegistroMovimentoFaixa\RelatorioRegistroMovimentoDataSet.xss">
+      <DependentUpon>RelatorioRegistroMovimentoDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\RegistroMovimentoAnual\RelatorioRegistroMovimentoAnualDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelatorioRegistroMovimentoAnualDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\RegistroMovimentoAnual\RelatorioRegistroMovimentoAnualDataSet.xss">
+      <DependentUpon>RelatorioRegistroMovimentoAnualDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\RegistroMovimentoDiarioFaixa\RelatorioRegistroMovimentoDiarioDataSet.xsc">
+      <DependentUpon>RelatorioRegistroMovimentoDiarioDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\RegistroMovimentoDiarioFaixa\RelatorioRegistroMovimentoDiarioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelatorioRegistroMovimentoDiarioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\RegistroMovimentoDiarioFaixa\RelatorioRegistroMovimentoDiarioDataSet.xss">
+      <DependentUpon>RelatorioRegistroMovimentoDiarioDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\RegistroMovimentoDiarioPrevistoFaixa\RelatorioRegistroMovimentoDiarioPrevistoDataSet.xsc">
+      <DependentUpon>RelatorioRegistroMovimentoDiarioPrevistoDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\RegistroMovimentoDiarioPrevistoFaixa\RelatorioRegistroMovimentoDiarioPrevistoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelatorioRegistroMovimentoDiarioPrevistoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\RegistroMovimentoDiarioPrevistoFaixa\RelatorioRegistroMovimentoDiarioPrevistoDataSet.xss">
+      <DependentUpon>RelatorioRegistroMovimentoDiarioPrevistoDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\RegistroMovimentoDiarioPrevisto\RelatorioRegistroMovimentoDiarioPrevistoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelatorioRegistroMovimentoDiarioPrevistoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\RegistroMovimentoDiarioPrevisto\RelatorioRegistroMovimentoDiarioPrevistoDataSet.xss">
+      <DependentUpon>RelatorioRegistroMovimentoDiarioPrevistoDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\RegistroMovimentoDiario\RelatorioRegistroMovimentoDiarioDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelatorioRegistroMovimentoDiarioDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\RegistroMovimentoDiario\RelatorioRegistroMovimentoDiarioDataSet.xss">
+      <DependentUpon>RelatorioRegistroMovimentoDiarioDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\RegistroMovimentoTaxa\RelatorioRegistroMovimentoTaxaDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelatorioRegistroMovimentoTaxaDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\RegistroMovimentoTaxa\RelatorioRegistroMovimentoTaxaDataSet.xss">
+      <DependentUpon>RelatorioRegistroMovimentoTaxaDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\RegistroMovimento\RelatorioRegistroMovimentoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RelatorioRegistroMovimentoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\RegistroMovimento\RelatorioRegistroMovimentoDataSet.xss">
+      <DependentUpon>RelatorioRegistroMovimentoDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\Shared\_LayoutRelatorioGrafico.cshtml" />
+    <Content Include="Views\Shared\_Login.cshtml" />
+    <Content Include="Views\Shared\_Topo.cshtml" />
+    <Content Include="Views\Shared\_MultiplaSelecao.cshtml" />
+    <None Include="Web.Homologacao.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Producao.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\Contrato\RelatorioContrato.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroEvento\RelatorioRegistroEvento.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoAnual\RelatorioRegistroMovimentoAnual4.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoAnual\RelatorioRegistroMovimentoAnual1.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoAnual\RelatorioRegistroMovimentoAnual2.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioFaixa\RelatorioRegistroMovimentoDiario4.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioFaixa\RelatorioRegistroMovimentoDiario1.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioPrevistoFaixa\RelatorioRegistroMovimentoDiarioPrevisto4.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioPrevistoFaixa\RelatorioRegistroMovimentoDiarioPrevisto1.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioPrevisto\RelatorioRegistroMovimentoDiarioPrevisto4.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioPrevisto\RelatorioRegistroMovimentoDiarioPrevisto1.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiario\RelatorioRegistroMovimentoDiario4.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiario\RelatorioRegistroMovimentoDiario1.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoFaixa\RelatorioRegistroMovimento4.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoFaixa\RelatorioRegistroMovimento1.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoFaixa\RelatorioRegistroMovimento.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoFaixa\RelatorioRegistroMovimento2.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoFaixa\RelatorioRegistroMovimento3.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoAnual\RelatorioRegistroMovimentoAnual.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoAnual\RelatorioRegistroMovimentoAnual3.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioFaixa\RelatorioRegistroMovimentoDiario.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioFaixa\RelatorioRegistroMovimentoDiario2.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioFaixa\RelatorioRegistroMovimentoDiario3.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioPrevistoFaixa\RelatorioRegistroMovimentoDiarioPrevisto.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioPrevistoFaixa\RelatorioRegistroMovimentoDiarioPrevisto2.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioPrevistoFaixa\RelatorioRegistroMovimentoDiarioPrevisto3.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioPrevisto\RelatorioRegistroMovimentoDiarioPrevisto.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioPrevisto\RelatorioRegistroMovimentoDiarioPrevisto2.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiarioPrevisto\RelatorioRegistroMovimentoDiarioPrevisto3.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiario\RelatorioRegistroMovimentoDiario3.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiario\RelatorioRegistroMovimentoDiario2.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoDiario\RelatorioRegistroMovimentoDiario.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoTaxa\RelatorioRegistroMovimentoTaxa4.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoTaxa\RelatorioRegistroMovimentoTaxa1.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoTaxa\RelatorioRegistroMovimentoTaxa.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoTaxa\RelatorioRegistroMovimentoTaxa2.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimentoTaxa\RelatorioRegistroMovimentoTaxa3.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimento\RelatorioRegistroMovimento4.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimento\RelatorioRegistroMovimento1.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimento\RelatorioRegistroMovimento2.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimento\RelatorioRegistroMovimento.rdlc" />
+    <EmbeddedResource Include="Reports\RegistroMovimento\RelatorioRegistroMovimento3.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Homologacao|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Producao|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!--<Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.targets" />-->
+  <PropertyGroup>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

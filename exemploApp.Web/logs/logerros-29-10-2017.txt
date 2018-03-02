@@ -1,0 +1,262 @@
+ERROR 2017-10-29 16:28:55,012 28749ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em System.IO.File.ReadAllText(String path)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-29 16:36:49,225 93470ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em System.IO.File.ReadAllText(String path)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-29 17:29:16,034 45054ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em System.IO.File.ReadAllText(String path)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-29 18:07:01,199 38822ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em System.IO.File.ReadAllText(String path)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-29 18:43:00,991 2198614ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em System.IO.File.ReadAllText(String path)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-29 19:56:31,863 6609486ms AbstractBatcher        lambda_method      - Could not execute query: INSERT INTO COSMOSS.ITEM_SUBCATEGORIA_PLANO_ESTATISTICO (DESC_ITEM_SUBCATEGORIA_PE, STAT_ITEM_SUBCATEGORIA_PE, ID_SUBCATEGORIA_PE) VALUES (@p0, @p1, @p2); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated.
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 222
+ClientConnectionId:65828863-76a5-4518-95f9-d66b25e96d95
+Error Number:8152,State:2,Class:16
+ERROR 2017-10-29 19:56:31,967 6609590ms ADOExceptionReporter   lambda_method      - String or binary data would be truncated.
+The statement has been terminated.
+ERROR 2017-10-29 19:56:32,032 6609655ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.Exceptions.GenericADOException: could not insert: [COSMOSS.Dominio.Entidades.ItemSubCategoriaPlanoEstatistico][SQL: INSERT INTO COSMOSS.ITEM_SUBCATEGORIA_PLANO_ESTATISTICO (DESC_ITEM_SUBCATEGORIA_PE, STAT_ITEM_SUBCATEGORIA_PE, ID_SUBCATEGORIA_PE) VALUES (?, ?, ?); select SCOPE_IDENTITY()] ---> System.Data.SqlClient.SqlException: String or binary data would be truncated.
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 228
+   em NHibernate.Id.IdentityGenerator.InsertSelectDelegate.ExecuteAndExtract(IDbCommand insert, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\IdentityGenerator.cs:linha 74
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 42
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Id.Insert.AbstractReturningDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Id\Insert\AbstractReturningDelegate.cs:linha 51
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Persister\Entity\AbstractEntityPersister.cs:linha 2573
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Persister\Entity\AbstractEntityPersister.cs:linha 3033
+   em NHibernate.Action.EntityIdentityInsertAction.Execute() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Action\EntityIdentityInsertAction.cs:linha 75
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 135
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 259
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 187
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:linha 119
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 162
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 148
+   em NHibernate.Event.Default.DefaultSaveEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveEventListener.cs:linha 21
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:linha 53
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 2533
+   em NHibernate.Impl.SessionImpl.Save(Object obj) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 489
+   em Tykon.Base.Persistencia.Repositorio`1.AdicionarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 154
+   em Tykon.Base.Persistencia.Repositorio`1.Adicionar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 76
+   em COSMOSS.Servico.ServicoSubCategoriaPlanoEstatistico.AdicionarItemSubCategoria(SubCategoriaPlanoEstatistico entidade, SubCategoriaPlanoEstatistico subcategoriaBanco, IRepositorioSubCategoriaPlanoEstatistico repositorio) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoSubCategoriaPlanoEstatistico.cs:linha 99
+   em COSMOSS.Servico.ServicoSubCategoriaPlanoEstatistico.AtualizarInterno(SubCategoriaPlanoEstatistico entidade) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoSubCategoriaPlanoEstatistico.cs:linha 78
+   em Tykon.Base.Servicos.Servico`1.Atualizar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 95
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__1() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 290
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2017-10-29 20:13:51,855 7649478ms tFlushingEventListener lambda_method      - Could not synchronize database state with session
+NHibernate.StaleStateException: Batch update returned unexpected row count from update; actual row count: 0; expected: 1
+   em NHibernate.AdoNet.Expectations.VerifyOutcomeBatched(Int32 expectedRowCount, Int32 rowCount) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\Expectations.cs:linha 106
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 94
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 411
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 128
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 169
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 248
+ERROR 2017-10-29 20:13:51,915 7649538ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.StaleStateException: Batch update returned unexpected row count from update; actual row count: 0; expected: 1
+   em NHibernate.AdoNet.Expectations.VerifyOutcomeBatched(Int32 expectedRowCount, Int32 rowCount) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\Expectations.cs:linha 106
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 94
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 411
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 128
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 169
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 256
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultFlushEventListener.cs:linha 19
+   em NHibernate.Impl.SessionImpl.Flush() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 1461
+   em Tykon.Base.Persistencia.Repositorio`1.AtualizarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 167
+   em Tykon.Base.Persistencia.Repositorio`1.Atualizar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 93
+   em COSMOSS.Servico.ServicoCategoriaPlanoEstatistico.<AtualizarSubCategoria>b__9_1(SubCategoriaPlanoEstatistico i) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoCategoriaPlanoEstatistico.cs:linha 147
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em COSMOSS.Servico.ServicoCategoriaPlanoEstatistico.AtualizarSubCategoria(CategoriaPlanoEstatistico entidade, CategoriaPlanoEstatistico categoriaBanco, IRepositorioCategoriaPlanoEstatistico repositorio) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoCategoriaPlanoEstatistico.cs:linha 147
+   em COSMOSS.Servico.ServicoCategoriaPlanoEstatistico.AtualizarInterno(CategoriaPlanoEstatistico entidade) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoCategoriaPlanoEstatistico.cs:linha 77
+   em Tykon.Base.Servicos.Servico`1.Atualizar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 95
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__1() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 290
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2017-10-29 20:14:05,137 7662759ms tFlushingEventListener lambda_method      - Could not synchronize database state with session
+NHibernate.StaleStateException: Batch update returned unexpected row count from update; actual row count: 0; expected: 1
+   em NHibernate.AdoNet.Expectations.VerifyOutcomeBatched(Int32 expectedRowCount, Int32 rowCount) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\Expectations.cs:linha 106
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 94
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 411
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 128
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 169
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 248
+ERROR 2017-10-29 20:14:05,181 7662804ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.StaleStateException: Batch update returned unexpected row count from update; actual row count: 0; expected: 1
+   em NHibernate.AdoNet.Expectations.VerifyOutcomeBatched(Int32 expectedRowCount, Int32 rowCount) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\Expectations.cs:linha 106
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 94
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 411
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 128
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 169
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 256
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultFlushEventListener.cs:linha 19
+   em NHibernate.Impl.SessionImpl.Flush() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 1461
+   em Tykon.Base.Persistencia.Repositorio`1.AtualizarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 167
+   em Tykon.Base.Persistencia.Repositorio`1.Atualizar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 93
+   em COSMOSS.Servico.ServicoCategoriaPlanoEstatistico.<AtualizarSubCategoria>b__9_1(SubCategoriaPlanoEstatistico i) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoCategoriaPlanoEstatistico.cs:linha 147
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em COSMOSS.Servico.ServicoCategoriaPlanoEstatistico.AtualizarSubCategoria(CategoriaPlanoEstatistico entidade, CategoriaPlanoEstatistico categoriaBanco, IRepositorioCategoriaPlanoEstatistico repositorio) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoCategoriaPlanoEstatistico.cs:linha 147
+   em COSMOSS.Servico.ServicoCategoriaPlanoEstatistico.AtualizarInterno(CategoriaPlanoEstatistico entidade) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoCategoriaPlanoEstatistico.cs:linha 77
+   em Tykon.Base.Servicos.Servico`1.Atualizar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 95
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__1() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 290
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2017-10-29 20:14:23,425 7681048ms tFlushingEventListener lambda_method      - Could not synchronize database state with session
+NHibernate.StaleStateException: Batch update returned unexpected row count from update; actual row count: 0; expected: 1
+   em NHibernate.AdoNet.Expectations.VerifyOutcomeBatched(Int32 expectedRowCount, Int32 rowCount) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\Expectations.cs:linha 106
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 94
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 411
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 128
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 169
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 248
+ERROR 2017-10-29 20:14:23,470 7681093ms Controladora           LogExcecao         - ExecutarServicoSeguro
+NHibernate.StaleStateException: Batch update returned unexpected row count from update; actual row count: 0; expected: 1
+   em NHibernate.AdoNet.Expectations.VerifyOutcomeBatched(Int32 expectedRowCount, Int32 rowCount) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\Expectations.cs:linha 106
+   em NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\SqlClientBatchingBatcher.cs:linha 94
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 411
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteBatch() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:linha 396
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 128
+   em NHibernate.Engine.ActionQueue.ExecuteActions() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:linha 169
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\AbstractFlushingEventListener.cs:linha 256
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event) na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Event\Default\DefaultFlushEventListener.cs:linha 19
+   em NHibernate.Impl.SessionImpl.Flush() na d:\Projects\NHibernate\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:linha 1461
+   em Tykon.Base.Persistencia.Repositorio`1.AtualizarEntidade(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 167
+   em Tykon.Base.Persistencia.Repositorio`1.Atualizar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Persistencia\Repositorio.cs:linha 93
+   em COSMOSS.Servico.ServicoCategoriaPlanoEstatistico.<AtualizarSubCategoria>b__9_1(SubCategoriaPlanoEstatistico i) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoCategoriaPlanoEstatistico.cs:linha 147
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em COSMOSS.Servico.ServicoCategoriaPlanoEstatistico.AtualizarSubCategoria(CategoriaPlanoEstatistico entidade, CategoriaPlanoEstatistico categoriaBanco, IRepositorioCategoriaPlanoEstatistico repositorio) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoCategoriaPlanoEstatistico.cs:linha 147
+   em COSMOSS.Servico.ServicoCategoriaPlanoEstatistico.AtualizarInterno(CategoriaPlanoEstatistico entidade) na G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Servico\ServicoCategoriaPlanoEstatistico.cs:linha 77
+   em Tykon.Base.Servicos.Servico`1.Atualizar(T entidade) na D:\VOZDIGITAL\Tykon\Tykon.Base\Servicos\Servico.cs:linha 95
+   em Tykon.Web.Controllers.ControladorBase`2.<>c__DisplayClass17_0.<SalvarPadrao>b__1() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\ControladorBase.cs:linha 290
+   em Tykon.Web.Controllers.Controladora.ExecutarServicoSeguro(Action execucao, Func`1 retornoSucesso) na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\Controladora.cs:linha 106
+ERROR 2017-10-29 20:32:06,448 100724ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-29 21:11:26,360 31252ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-29 21:16:16,986 146079ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-29 21:20:28,081 397173ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-29 21:22:30,739 47546ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-29 21:36:56,403 913210ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264
+ERROR 2017-10-29 21:43:34,071 71987ms Controladora           LogExcecao         - Não foi possível recuperar as informações da versão do sistema.
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'.
+Nome do arquivo: 'G:\VOZDIGITAL\COSMOSS\trunk\COSMOSS.Web\versao'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   em System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   em Tykon.Web.Controllers.LoginController.VersaoAplicacaoPadrao() na D:\VOZDIGITAL\Tykon\Tykon.Web\Controllers\LoginController.cs:linha 264

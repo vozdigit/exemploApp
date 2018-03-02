@@ -1,0 +1,91 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exemploApp.Web", "exemploApp.Web\exemploApp.Web.csproj", "{9769F950-E098-4C5B-9752-27C4D7EEC09E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exemploApp.Dados", "exemploApp.Dados\exemploApp.Dados.csproj", "{ADD378B5-8887-4DD4-8DFD-D6DE7E9A1615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exemploApp.Dominio", "exemploApp.Dominio\exemploApp.Dominio.csproj", "{0E4D926B-49C4-4470-B337-2ABCA37E9DFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exemploApp.Servico", "exemploApp.Servico\exemploApp.Servico.csproj", "{D0829BAC-516E-4AF8-AD64-16A09C50EA3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{7F76DECB-9343-485A-9229-C91247EBA6F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Homologacao|Any CPU = Homologacao|Any CPU
+		Producao|Any CPU = Producao|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9769F950-E098-4C5B-9752-27C4D7EEC09E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9769F950-E098-4C5B-9752-27C4D7EEC09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9769F950-E098-4C5B-9752-27C4D7EEC09E}.Homologacao|Any CPU.ActiveCfg = Homologacao|Any CPU
+		{9769F950-E098-4C5B-9752-27C4D7EEC09E}.Homologacao|Any CPU.Build.0 = Homologacao|Any CPU
+		{9769F950-E098-4C5B-9752-27C4D7EEC09E}.Producao|Any CPU.ActiveCfg = Producao|Any CPU
+		{9769F950-E098-4C5B-9752-27C4D7EEC09E}.Producao|Any CPU.Build.0 = Producao|Any CPU
+		{9769F950-E098-4C5B-9752-27C4D7EEC09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9769F950-E098-4C5B-9752-27C4D7EEC09E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD378B5-8887-4DD4-8DFD-D6DE7E9A1615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD378B5-8887-4DD4-8DFD-D6DE7E9A1615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD378B5-8887-4DD4-8DFD-D6DE7E9A1615}.Homologacao|Any CPU.ActiveCfg = Homologacao|Any CPU
+		{ADD378B5-8887-4DD4-8DFD-D6DE7E9A1615}.Homologacao|Any CPU.Build.0 = Homologacao|Any CPU
+		{ADD378B5-8887-4DD4-8DFD-D6DE7E9A1615}.Producao|Any CPU.ActiveCfg = Producao|Any CPU
+		{ADD378B5-8887-4DD4-8DFD-D6DE7E9A1615}.Producao|Any CPU.Build.0 = Producao|Any CPU
+		{ADD378B5-8887-4DD4-8DFD-D6DE7E9A1615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD378B5-8887-4DD4-8DFD-D6DE7E9A1615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E4D926B-49C4-4470-B337-2ABCA37E9DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E4D926B-49C4-4470-B337-2ABCA37E9DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E4D926B-49C4-4470-B337-2ABCA37E9DFF}.Homologacao|Any CPU.ActiveCfg = Homologacao|Any CPU
+		{0E4D926B-49C4-4470-B337-2ABCA37E9DFF}.Homologacao|Any CPU.Build.0 = Homologacao|Any CPU
+		{0E4D926B-49C4-4470-B337-2ABCA37E9DFF}.Producao|Any CPU.ActiveCfg = Producao|Any CPU
+		{0E4D926B-49C4-4470-B337-2ABCA37E9DFF}.Producao|Any CPU.Build.0 = Producao|Any CPU
+		{0E4D926B-49C4-4470-B337-2ABCA37E9DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E4D926B-49C4-4470-B337-2ABCA37E9DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0829BAC-516E-4AF8-AD64-16A09C50EA3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0829BAC-516E-4AF8-AD64-16A09C50EA3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0829BAC-516E-4AF8-AD64-16A09C50EA3A}.Homologacao|Any CPU.ActiveCfg = Homologacao|Any CPU
+		{D0829BAC-516E-4AF8-AD64-16A09C50EA3A}.Homologacao|Any CPU.Build.0 = Homologacao|Any CPU
+		{D0829BAC-516E-4AF8-AD64-16A09C50EA3A}.Producao|Any CPU.ActiveCfg = Producao|Any CPU
+		{D0829BAC-516E-4AF8-AD64-16A09C50EA3A}.Producao|Any CPU.Build.0 = Producao|Any CPU
+		{D0829BAC-516E-4AF8-AD64-16A09C50EA3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0829BAC-516E-4AF8-AD64-16A09C50EA3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A09E12D-C883-4EF8-8E53-C824AE1721CD}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://vozdigitalsolucoesinteligentes.visualstudio.com/
+		SccProjectUniqueName0 = exemploApp.Dominio\\exemploApp.Dominio.csproj
+		SccProjectName0 = exemploApp.Dominio
+		SccAuxPath0 = https://vozdigitalsolucoesinteligentes.visualstudio.com
+		SccLocalPath0 = exemploApp.Dominio
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = exemploApp.Servico\\exemploApp.Servico.csproj
+		SccProjectName1 = exemploApp.Servico
+		SccAuxPath1 = https://vozdigitalsolucoesinteligentes.visualstudio.com
+		SccLocalPath1 = exemploApp.Servico
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = exemploApp.Dados\\exemploApp.Dados.csproj
+		SccProjectName2 = exemploApp.Dados
+		SccAuxPath2 = https://vozdigitalsolucoesinteligentes.visualstudio.com
+		SccLocalPath2 = exemploApp.Dados
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = exemploApp.Web\\exemploApp.Web.csproj
+		SccProjectName3 = exemploApp.Web
+		SccAuxPath3 = https://vozdigitalsolucoesinteligentes.visualstudio.com
+		SccLocalPath3 = exemploApp.Web
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

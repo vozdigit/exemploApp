@@ -1,0 +1,10 @@
+@model exemploApp.Dominio.Entidades.EntidadesControleSistema.Item
+
+
+@using Tykon.Web.Helpers
+@using Tykon.Web.Models;
+@using exemploApp.Dominio.Entidades.EntidadesControleSistema;
+@using System.Web.Mvc.Html;
+@using System.Linq
+
+@Html.FWComboBoxGrupo(x => x.Menu.Id, "Menu", true, "Id", "NomeMenu", (System.Collections.IEnumerable)ViewBag.Menus, false, FWTamanho.Cinco, "Modulo", "Selecione...", null, false)

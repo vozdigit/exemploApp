@@ -1,0 +1,92 @@
+﻿@using exemploApp.Dominio.Interfaces.Servicos.ControleSistema;
+@using exemploApp.Web;
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style>
+    .col-xs-6 {
+        position: relative;
+        min-height: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .main-content {
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 35px;
+        background-color: transparent;
+    }
+
+    a:focus, a:hover {
+        color: #23527c;
+    }
+
+    a {
+        color: #555;
+    }
+
+    .widget {
+        background-color: transparent;
+    }
+</style>
+
+<div class="page-head">
+    <h2><i class="fa fa-home fa-2x"></i> Página inicial</h2>
+</div>
+<div class="main-content">
+
+    <div class="widget containerConteudo">
+
+    @{var CodigoModulo = Session["CodigoModulo"];}
+    @{var LoginUsuario = Session["LoginUsuario"];}
+
+    @if (CodigoModulo != null)
+    {
+
+        using (var svc = MvcApplication.Fabrica.Resolva<IServicoItem>())
+        {
+            var listaItens = svc.ListarItensDoUsuarioNoModulo(Convert.ToInt32(CodigoModulo), LoginUsuario.ToString());
+
+            int quantidadeRegistros = listaItens.Count();
+            int quantidadeLinhas = (int)Math.Ceiling((decimal)quantidadeRegistros / 6);
+            int contador = 0;
+
+            for (int i = 0; i < quantidadeLinhas; i++)
+            {
+                    <div class="row">
+
+                        @for (int j = 0; j < 6; j++)
+                        {
+                            if (contador < quantidadeRegistros)
+                            {
+                                <div onclick="principal.selecionarItemMenu(this,'@Url.Action("Inicio", listaItens[contador].Controladoritem)')" class="col-xs-6 col-sm-3 col-lg-2">
+                                    <div class="icon-ativo">
+                                        <div class="icon-container">
+                                            <a href="javascript:;" onclick="principal.selecionarItemMenu(this,'@Url.Action("Inicio", listaItens[contador].Controladoritem)')"><div class="icon"><i class="@listaItens[contador].LogoItem fa-3x"></i></div><span class="class">@listaItens[contador].DescricaoItem</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="col-xs-6 col-sm-3 col-lg-2">
+                                    <div class="icon-container-disabled">
+                                        <div class="icon"><i class="fa fa-ellipsis-h fa-3x"></i></div><span class="class">&nbsp;</span>
+                                    </div>
+                                </div>
+                            }
+
+                            contador++;
+                        }
+
+                    </div>
+                }
+
+
+            }
+
+    }
+
+    </div>
+</div>

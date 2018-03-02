@@ -1,0 +1,52 @@
+@using Tykon.Web.Helpers
+@using Tykon.Web.Models
+@using Tykon.Web.Models
+
+<div id="containerfiltro" class="form-horizontal">
+
+    @Html.FWTextBoxGrupoLivre("Nome da Cidade *", "NomeMunicipio", false, null, FWTamanho.Seis, null, false, null, false)
+
+</div>
+
+<div class="botao-filtro">
+    <a href="javascript:;" class="btn btn-success" id="btnFiltrarMunicipioMantenedora" onclick="filtroPesqMunicipios.filtrarPesquisa()"><i class="fa fa-filter"></i> Filtrar</a>
+</div>
+
+<script type="text/javascript">
+    var filtroPesqMunicipios = function () {
+
+        var validarFiltro = function () {
+            var sucesso = true;
+            var inconsistencia = [];
+
+            var nomemunicipio = $("#NomeMunicipio").val();
+
+            if (nomemunicipio == "") {
+                inconsistencia.push({ Propriedade: '', Mensagem: 'Informe o nome do Município.' });
+            }
+
+            if (inconsistencia.length > 0) {
+                mensagem.exibaErroDetalhado(inconsistencia);
+                sucesso = false;
+            }
+
+            return sucesso;
+        };
+
+        var filtrarPesquisa = function () {
+
+            if (!validarFiltro()) return;
+
+            var nomemunicipio = $("#NomeMunicipio").val();
+
+            var parametros = { "nomeMunicipio": nomemunicipio };
+
+            pesquisaMunicipio.filtrarItens("@Url.Action("FiltrarMunicipios")", parametros);
+        };
+
+        return {
+            filtrarPesquisa: filtrarPesquisa
+        }
+    }();
+
+</script>

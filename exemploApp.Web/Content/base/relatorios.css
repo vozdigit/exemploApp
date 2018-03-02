@@ -1,0 +1,94 @@
+﻿@media print {
+
+    html, body {
+        width: 100% !important;
+        /*height: 100% !important;*/
+    }
+
+    .widget{
+        overflow: inherit !important;
+    }
+
+    .panel-body {
+        /*margin-left: -50px;
+		padding: 0px;*/
+    }
+
+    .panel-heading {
+        display: none !important;
+    }
+
+    .logo-bottom {
+        display: none !important;
+    }
+
+    .page-header {
+        /*margin-top: -120px;
+		margin-left: -27px;*/
+        line-height: 0px !important;
+        /*margin: 20px 0 30px !important;*/
+    }
+
+    .header {
+        display: none !important;
+    }
+
+    .table-bordered, .grid td {
+        border: 0 !important;
+        border-collapse: collapse !important;
+    }
+
+        .table-bordered th, .table-bordered td {
+            border-bottom: 0 !important;
+            border: 1px solid black !important;
+        }
+
+    .sidebar {
+        display: none !important;
+    }
+
+    .content, #content {
+        margin-left: 0px !important;
+        padding: 0px !important;
+    }
+
+    .sidebar-bg {
+        display: none !important;
+    }
+
+    .panel-body {
+        padding: 0px !important;
+    }
+
+    .page-header-fixed {
+        padding-top: inherit !important;
+    }
+
+    .brasao {
+        display: inherit !important;
+    }
+
+    .quebra-pagina {
+        page-break-after: always;
+    }
+
+    .logo {
+        display: none !important;
+    }
+
+    .page-title {
+        display: none !important;
+    }
+
+    .btn-toolbar {
+        display: none !important;
+    }
+
+    .panel-title {
+        display: none !important;
+    }
+
+    #tituloRelatorio {
+        display: initial !important;
+    }
+}

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RelatorioRegistroMovimentoDataSet" targetNamespace="http://tempuri.org/RelatorioRegistroMovimentoDataSet.xsd" xmlns:mstns="http://tempuri.org/RelatorioRegistroMovimentoDataSet.xsd" xmlns="http://tempuri.org/RelatorioRegistroMovimentoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RelatorioRegistroMovimentoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RelatorioRegistroMovimentoDataSet" msprop:Generator_UserDSName="RelatorioRegistroMovimentoDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RelatorioRegistroMovimento" msprop:Generator_TableClassName="RelatorioRegistroMovimentoDataTable" msprop:Generator_TableVarName="tableRelatorioRegistroMovimento" msprop:Generator_RowChangedName="RelatorioRegistroMovimentoRowChanged" msprop:Generator_TablePropName="RelatorioRegistroMovimento" msprop:Generator_RowDeletingName="RelatorioRegistroMovimentoRowDeleting" msprop:Generator_RowChangingName="RelatorioRegistroMovimentoRowChanging" msprop:Generator_RowEvHandlerName="RelatorioRegistroMovimentoRowChangeEventHandler" msprop:Generator_RowDeletedName="RelatorioRegistroMovimentoRowDeleted" msprop:Generator_RowClassName="RelatorioRegistroMovimentoRow" msprop:Generator_UserTableName="RelatorioRegistroMovimento" msprop:Generator_RowEvArgName="RelatorioRegistroMovimentoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdIndicador" msprop:Generator_ColumnVarNameInTable="columnIdIndicador" msprop:Generator_ColumnPropNameInRow="IdIndicador" msprop:Generator_ColumnPropNameInTable="IdIndicadorColumn" msprop:Generator_UserColumnName="IdIndicador" type="xs:string" minOccurs="0" />
+              <xs:element name="NomeIndicador" msprop:Generator_ColumnVarNameInTable="columnNomeIndicador" msprop:Generator_ColumnPropNameInRow="NomeIndicador" msprop:Generator_ColumnPropNameInTable="NomeIndicadorColumn" msprop:Generator_UserColumnName="NomeIndicador" type="xs:string" minOccurs="0" />
+              <xs:element name="IdSubGrupoIndicador" msprop:Generator_ColumnVarNameInTable="columnIdSubGrupoIndicador" msprop:Generator_ColumnPropNameInRow="IdSubGrupoIndicador" msprop:Generator_ColumnPropNameInTable="IdSubGrupoIndicadorColumn" msprop:Generator_UserColumnName="IdSubGrupoIndicador" type="xs:string" minOccurs="0" />
+              <xs:element name="DescSubGrupoIndicador" msprop:Generator_ColumnVarNameInTable="columnDescSubGrupoIndicador" msprop:Generator_ColumnPropNameInRow="DescSubGrupoIndicador" msprop:Generator_ColumnPropNameInTable="DescSubGrupoIndicadorColumn" msprop:Generator_UserColumnName="DescSubGrupoIndicador" type="xs:string" minOccurs="0" />
+              <xs:element name="RegistroPrimeiroMes" msprop:Generator_ColumnVarNameInTable="columnRegistroPrimeiroMes" msprop:Generator_ColumnPropNameInRow="RegistroPrimeiroMes" msprop:Generator_ColumnPropNameInTable="RegistroPrimeiroMesColumn" msprop:Generator_UserColumnName="RegistroPrimeiroMes" type="xs:string" minOccurs="0" />
+              <xs:element name="MetaPrimeiroMes" msprop:Generator_ColumnVarNameInTable="columnMetaPrimeiroMes" msprop:Generator_ColumnPropNameInRow="MetaPrimeiroMes" msprop:Generator_ColumnPropNameInTable="MetaPrimeiroMesColumn" msprop:Generator_UserColumnName="MetaPrimeiroMes" type="xs:string" minOccurs="0" />
+              <xs:element name="MetaGrupoPrimeiroMes" msprop:Generator_ColumnVarNameInTable="columnMetaGrupoPrimeiroMes" msprop:Generator_ColumnPropNameInRow="MetaGrupoPrimeiroMes" msprop:Generator_ColumnPropNameInTable="MetaGrupoPrimeiroMesColumn" msprop:Generator_UserColumnName="MetaGrupoPrimeiroMes" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,170 @@
+﻿@model Tykon.Web.Models.Usuario
+@using Tykon.Web.Helpers
+
+<style>
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 37px;
+        padding: 6px 16px;
+        font-size: 13px;
+        line-height: 1.846;
+        color: #ffffff;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    textarea, textarea.form-control, input.form-control, input[type=text], input[type=password], input[type=email], input[type=number], [type=text].form-control, [type=password].form-control, [type=email].form-control, [type=tel].form-control, [contenteditable].form-control {
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        -webkit-appearance: none;
+        -webkit-box-shadow: inset 0 -1px 0 #ddd;
+        box-shadow: inset 0 -1px 0 #ddd;
+        font-size: 16px;
+    }
+
+        textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
+            background-color: transparent;
+            -webkit-box-shadow: inset 0 -2px 0 #2196f3;
+            box-shadow: inset 0 -2px 0 #2196f3;
+        }
+
+        input[type="text"]:focus, textarea:focus, textarea.form-control:focus {
+            outline: 0;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+    .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 16px;
+        font-size: 13px;
+        line-height: 1.846;
+        border-radius: 3px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #fff;
+        background-color: rgba(255,255,255,0.1);
+    }
+
+        .btn:hover, .btn:focus, .btn.focus {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+
+    .parsley-errors-list.filled {
+        margin-top: 5px;
+        margin-bottom: 0;
+        padding: 5px 0px;
+        position: relative;
+        background-color: rgba(0,0,0,0);
+        color: #fff;
+    }
+
+        .parsley-errors-list.filled:after {
+            position: absolute;
+            top: -6px;
+            left: 20px;
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            -moz-transform: scale(.9999);
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 7px solid rgba(0,0,0,0);
+        }
+
+    input.parsley-error, select.parsley-error, textarea.parsley-error {
+        color: #B94A48;
+        background-color: rgba(0,0,0,0);
+    }
+</style>
+
+@using (Ajax.BeginForm("Logar", null, new AjaxOptions()
+{
+    HttpMethod = "Post",
+    InsertionMode = InsertionMode.Replace
+}, new { @data = "data-parsley-validate", @id = "formularioPadrao", @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+    <fieldset>
+        <legend style="margin-bottom:40px">Acesso Restrito <i class="fa fa-lock pull-right"></i></legend>
+        <div class="form-group">
+            <label for="inputEmail" class="col-lg-3 control-label">
+                Usuário
+            </label>
+            <div class="col-lg-9">
+                @Html.FWTextBox(model => model.Login, true, "Login", "Digite seu nome de Usuário ou CPF", new { @class = "form-control", @autocomplete = "off" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-lg-3 control-label">
+                Senha
+            </label>
+            <div class="col-lg-9">
+                @Html.FWPassword(model => model.Senha, true, "Senha", "Senha", new { @class = "form-control", @maxlength = "50", @autocomplete = "off" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div style="padding-top:20px" class="col-lg-9 col-lg-offset-3">
+                <button id="btnLogar" type="button" class="btn btn-inverse btn-block" onclick="login.OnClick('@Url.Action("InicioLogin", "Principal").ToString()')">
+                    Entrar
+                </button>
+            </div>
+        </div>
+
+        <div class="form-group" style="height:40px">
+            @*<label class="col-lg-3 control-label"></label>
+            <a class="col-lg-9" href="#">Esqueceu sua senha?</a>*@
+        </div>
+    </fieldset>
+}
+
+
+
+@*@using (Ajax.BeginForm("Logar", null, new AjaxOptions()
+                    {
+                        HttpMethod = "Post",
+                        InsertionMode = InsertionMode.Replace
+                    }, new { @data = "data-parsley-validate", @id = "formularioPadrao" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-group m-b-20">
+            @Html.FWTextBox(model => model.Login, true, "Login", "Usuário Portal ou CPF", new { @class = "input-lg" })
+        </div>
+        <div class="form-group m-b-20">
+            @Html.FWPassword(model => model.Senha, true, "Senha", "Senha", new { @class = "input-lg", @maxlength = "10" })
+        </div>
+
+
+        <div class="form-actions">
+
+            <button type="button" class="btn btn-info btn-block btn-lg btn-login" onclick="login.OnClick('@Url.Action("InicioLogin", "Principal").ToString()')"><span class="small-circle"><i class="fa fa-caret-right"></i></span> <small>Entrar</small></button>
+            <a href="https://www.intra.goias.gov.br/portal/SolicitarSenha" class="forgot" target="_blank">Esqueceu sua senha?</a>
+
+        </div>
+    }*@

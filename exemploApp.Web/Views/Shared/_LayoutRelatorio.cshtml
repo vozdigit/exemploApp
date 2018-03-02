@@ -1,0 +1,107 @@
+﻿@using Newtonsoft.Json;
+@using System.Linq;
+@using Tykon.Web.Helpers
+
+<style type="text/css">
+    .jqx-grid-cell-pinned {
+        background: none !important;
+    }
+
+    .jqx-grid-groups-header, .jqx-widget-header, .jqx-grid-content {
+        font-size: 12px !important;
+    }
+
+
+    #filtros {
+        display: block;
+    }
+
+    #tituloRelatorio {
+        display: none;
+    }
+
+    @@media print {
+        #filtros {
+            display: none;
+        }
+
+        .page-head {
+            display: none;
+        }
+    }
+</style>
+
+<script src="~/Content/jqbase/jqxdata.js"></script>
+<script src="~/Content/jqbase/jqxdata.export.js"></script>
+<script src="~/Content/jqbase/jqxgrid.export.js"></script>
+
+<div style="text-align: center; display: none; margin-bottom:20px;" class="brasao">
+    <img src="@Url.Content("~/Recursos/logoVoz.png")" style="zoom: 85%; margin-right: 70px">
+</div>
+
+<h2 id="tituloRelatorio" class="page-title" style="padding-left:20px">@ViewBag.NomeFuncionalidade </h2>
+
+<div class="page-head">
+    <h2>
+        <i class="@ViewBag.IconeFuncionalidade fa-2x"></i><span style="margin-left:20px">@ViewBag.NomeFuncionalidade</span><i style="font-size:19px;margin-left:15px" class="fa fa-caret-right fa-1x"></i>
+        <small style="font-weight:300">Relatório</small>
+    </h2>
+</div>
+
+<div class="main-content">
+
+    <div class="widget containerConteudo">
+
+        <div class="panel panel-default">
+
+            @*<fieldset>
+
+                <div class="btn-toolbar btn-toolbar-edicao">
+                    <a onclick="principal.fluxoListagem('@Url.Action("Inicio")')" class="btn btn-warning pull-right"><i class="fa fa-rotate-left"></i> Cancelar</a>
+                    <a href="javascript:;" class="btn btn-info pull-right" onclick="ExportarExcel()"><i class="fa fa-file-excel-o"></i> Exportar XLS</a>
+                    <a href="javascript:;" class="btn btn-info pull-right" onclick="window.print(); return false;"><i class="fa fa-print"></i> Imprimir</a>
+                </div>
+
+            </fieldset>*@
+
+            <div class="panel-heading">
+                <span class="title">Opções</span>
+                <div class="tools">
+
+                    <a onclick="principal.fluxoListagem('@Url.Action("Inicio")')" class="btn btn-warning pull-right botaoexcluir"><i class="fa fa-rotate-left"></i> Voltar</a>
+                    <a href="javascript:;" class="btn btn-success pull-right botaocancelar" onclick="ExportarExcel()"><i class="fa fa-file-excel-o"></i> Exportar XLS</a>
+                    <a href="javascript:;" class="btn btn-info pull-right botaosalvar" onclick="window.print(); return false;"><i class="fa fa-print"></i> Imprimir</a>
+
+                </div>
+            </div>
+
+            </div>
+
+            <div class="body" style="padding-left:10px;padding-bottom:10px">
+                @RenderBody()
+            </div>
+        </div>
+</div>
+    @Styles.Render("~/Content/estilosrelatorio?v15")
+    <script>
+        $(document).ready(function () {
+            App.init();
+        });
+
+        function ExportarExcel() {
+
+            var gridNome = $("div[role=grid]").attr("id");
+            var exportacao = $("div[role=grid]").jqxGrid('exportdata', 'xls');
+
+            var regexN = new RegExp("N: ", "igm");
+            var regexSum = new RegExp("Sum: ", "igm");
+
+            exportacao = exportacao.replace(regexN, "");
+            exportacao = exportacao.replace(regexSum, "");
+
+            var blob = new Blob([exportacao], { type: "application/excel;charset=utf-8" });
+
+            saveAs(blob, gridNome.replace("grid", "") + ".xls");
+        }
+
+    </script>

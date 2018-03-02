@@ -1,0 +1,35 @@
+@using Tykon.Web.Helpers
+
+<div class="form-horizontal">
+
+    @Html.FWTextBoxGrupoLivre("Nome ou parte", "NomeOuParte", false, null, FWTamanho.Cinco, null, false, null)
+    @Html.FWTextBoxGrupoLivre("Login ou CPF", "LoginOuCPF", false, null, FWTamanho.Dois, null, false, null)
+
+</div>
+
+<div class="botao-filtro">
+    <button class="btn btn-success botaofiltrar" onclick="clickFiltrar()"><i class="fa fa-filter"></i> Filtrar</button>
+    <button class="btn btn-default botaolimpar" onclick="principal.fluxoListagem('@Url.Action("Inicio")')"><i class="fa fa-eraser"></i> Limpar</button>
+</div>
+
+<script type="text/javascript">
+
+    var clickFiltrar = function()
+    {
+        var containerLoad = $(".widget.containerConteudo");
+        var loginOuCPF = $("#LoginOuCPF").val();
+        var nomeOuParte = $("#NomeOuParte").val();
+
+        var parametros = { "loginOuCPF": loginOuCPF, "nomeOuParte": nomeOuParte };
+     
+        var funcaoAtualiza = gridListagem.atualizarItens;
+
+        helperGrid.clickFiltrar(containerLoad, '@Url.Action("FiltrarUsuarios")', parametros, funcaoAtualiza)
+    };
+
+
+</script>
+
+
+
+

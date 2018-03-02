@@ -1,0 +1,424 @@
+/*   
+Template Name: Color Admin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
+Version: 1.5.0
+Author: Sean Ngu
+Website: http://www.seantheme.com/color-admin-v1.5/admin/
+*/
+
+.navbar-logo,
+.coming-soon .brand .logo,
+.login .login-header .brand .logo {
+    border-color: #2F83CF #2a72b5 #1f5688;
+}
+
+.navbar.navbar-inverse .navbar-brand,
+.sidebar .nav > li.active > a,
+.sidebar .nav > li.active > a:focus,
+.sidebar .nav > li.active > a:hover,
+.page-sidebar-minified .sidebar .nav > li.has-sub.active:focus > a,
+.page-sidebar-minified .sidebar .nav > li.has-sub.active:hover > a,
+.page-sidebar-minified .sidebar .nav > li.has-sub.active > a,
+.label.label-theme,
+.btn.btn-scroll-to-top {
+    background: #295097;
+}
+
+.navbar.navbar-inverse .navbar-brand {
+    color: #fff !important;
+}
+
+.text-theme,
+.sidebar .sub-menu > li.active > a:before {
+    color: #295097;
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-header {
+        background: #295097;
+    }
+}
+
+
+/* Added in v1.5 */
+
+.gradient-enabled .navbar.navbar-inverse .navbar-brand,
+.gradient-enabled .sidebar .nav > li.active > a,
+.gradient-enabled .sidebar .nav > li.active > a:focus,
+.gradient-enabled .sidebar .nav > li.active > a:hover,
+.gradient-enabled.page-sidebar-minified .sidebar .nav > li.has-sub.active:focus > a,
+.gradient-enabled.page-sidebar-minified .sidebar .nav > li.has-sub.active:hover > a,
+.gradient-enabled.page-sidebar-minified .sidebar .nav > li.has-sub.active > a,
+.gradient-enabled .label.label-theme,
+.gradient-enabled .btn.btn-scroll-to-top {
+    background: rgb(103,176,240); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY3YjBmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNDhmZTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(103,176,240,1) 0%, rgba(52,143,226,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(103,176,240,1)), color-stop(100%,rgba(52,143,226,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(103,176,240,1) 0%,rgba(52,143,226,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(103,176,240,1) 0%,rgba(52,143,226,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(103,176,240,1) 0%,rgba(52,143,226,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(103,176,240,1) 0%,rgba(52,143,226,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67b0f0', endColorstr='#348fe2',GradientType=0 ); /* IE6-8 */
+}
+
+.pace-progress {
+    background: #348fe2;
+}
+
+.pace .pace-activity {
+    border-top-color: #348fe2;
+    border-left-color: #348fe2;
+}
+
+.btn.btn-primary {
+    background: #295097 !important;
+    border-color: #295097 !important;
+}
+
+.btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary {
+    background: #213E73 !important;
+    border-color: #213E73 !important;
+}
+
+.panel-title {
+    float: left;
+}
+
+.panel-primary > .panel-heading {
+    background: #295097 !important;
+    overflow: auto;
+}
+
+
+.sidebar .nav > li.nav-profile .image {
+    float: left;
+    width: 34px;
+    height: inherit;
+    margin-top: 2px;
+    margin-right: 15px;
+    overflow: hidden;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    border-radius: 0%;
+}
+
+.navbar-brand {
+    margin-right: 10px;
+    padding: 12px 20px;
+    height: 54px;
+    width: inherit;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.sidebar {
+    background: #fff;
+    padding-bottom: 61px;
+}
+
+    .sidebar .nav > li > a {
+        color: #585859 !important;
+    }
+
+    .sidebar .nav > li.nav-profile {
+        background: #295097 !important;
+    }
+
+    .sidebar.sidebar-grid .nav > li > a {
+        border-bottom: 1px solid #D9E0E7;
+        border-top: 1px solid #D9E0E7;
+    }
+
+    .sidebar.sidebar-grid .nav > li.active > a {
+        border-color: #D9E0E7;
+    }
+
+    .sidebar .nav > li.expand > a, .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover {
+        background: #848FA3 !important;
+        color: #fff !important;
+    }
+
+    .sidebar .nav > li.active > a, .sidebar .nav > li.active > a:focus, .sidebar .nav > li.active > a:hover {
+        color: #fff !important;
+        background: #295097 !important;
+    }
+
+    .sidebar .sub-menu {
+        background: #fff !important;
+    }
+
+        .sidebar .sub-menu > li > a {
+            color: #585859 !important;
+        }
+
+        .sidebar .sub-menu:before {
+            background: #D7ECFF !important;
+        }
+
+        .sidebar .sub-menu > li.active > a, .sidebar .sub-menu > li.active > a:focus, .sidebar .sub-menu > li.active > a:hover, .sidebar .sub-menu > li > a:focus, .sidebar .sub-menu > li > a:hover {
+            color: #000;
+            background: #D9E0E7;
+        }
+
+.sidebar-bg {
+    background: #fff;
+}
+
+.sidebar-minify-btn {
+    background: #295097;
+}
+
+.dataTables_paginate a.current, .dataTables_paginate a.current:hover, .dataTables_paginate a.current:focus {
+    background: #295097 !important;
+    border-color: #295097 !important;
+}
+
+.btn-circle, .btn.btn-circle {
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    border-radius: 20%;
+}
+
+.logo-bottom {
+    position: fixed;
+    background-color: #fff;
+    line-height: 39px;
+    padding: 0 12px 0 0;
+    display: block;
+    padding: 8px 20px 8px;
+    text-align: center;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.3);
+    box-shadow: 0 0 2px rgba(0,0,0,.3);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 0;
+    z-index: 1020;
+}
+
+    .logo-bottom img {
+        width: 17%;
+    }
+
+.content {
+    padding: 20px 25px 61px 25px;
+}
+
+
+.nav-tabs.nav-tabs-inverse {
+    background: #295097;
+}
+
+.nav > li > a {
+    color: #FFFFFF;
+}
+
+.error-content {
+    background: #396489;
+}
+
+.checkBoxList {
+    margin-top: 7px !important;
+}
+
+.jqx-widget, .jqx-widget-content {
+    font-size: 12px;
+    font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    color: #707478;
+}
+
+
+div [role="row"] {
+    border-left: 1px solid #e2e7eb !important;
+    border-right: 1px solid #e2e7eb !important;
+    margin-left: -2px !important;
+}
+
+div [role="columnheader"] {
+    margin-left: -1px !important;
+}
+
+.jqx-grid-column-header {
+    border-top: 1px solid #e2e7eb !important;
+}
+
+.jqx-grid {
+    border-left: 1px solid #e2e7eb !important;
+    border-bottom: 1px solid #e2e7eb !important;
+}
+
+.jqx-grid-groups-header {
+    border: 1px solid #e2e7eb !important;
+    margin-left: -2px !important;
+}
+
+.jqx-grid-pager {
+    border-right: 1px solid #e2e7eb !important;
+    margin-left: -1px !important;
+}
+
+
+.jqx-grid-groups-header, .jqx-widget-header {
+    background: white !important;
+    color: #242a30 !important;
+    font-weight: bold !important;
+}
+
+.jqx-rc-all {
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.jqx-grid-content .jqx-fill-state-hover {
+    background-color: lightyellow !important;
+}
+
+.jqx-grid-pager {
+    line-height: 1.5 !important;
+}
+
+.jqx-grid-cell {
+    cursor: pointer;
+}
+
+.jqx-menu-vertical {
+    background-color: #FCFCFC !important;
+}
+
+.form-inline .form-group label {
+    padding-top: 8px !important;
+}
+
+.form-inline .form-group {
+    padding-right: 100px !important;
+}
+
+.botao-filtro {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+
+.dropdown-menu.inner.selectpicker {
+    max-width: 1000px !important;
+}
+
+
+/* Início - criação de css responsivo para redimensionamento dinâmico de painéis */
+
+@media (min-width: 480px) {
+    /* 1 item */
+    .col-md-auto {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    /* 1 item */
+    .col-md-auto:first-child:nth-last-child(1) {
+        width: 100%;
+    }
+
+    .col-md-auto:first-child:nth-last-child(2),
+    .col-md-auto:first-child:nth-last-child(2) ~ div,
+    .col-md-auto:first-child:nth-last-child(3),
+    .col-md-auto:first-child:nth-last-child(3) ~ .col-md-auto,
+    .col-md-auto:first-child:nth-last-child(4),
+    .col-md-auto:first-child:nth-last-child(4) ~ .col-md-auto,
+    .col-md-auto:first-child:nth-last-child(5),
+    .col-md-auto:first-child:nth-last-child(5) ~ .col-md-auto {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* 1 item */
+    .col-md-auto:first-child:nth-last-child(1) {
+        width: 100%;
+    }
+
+    /* 2 items */
+    .col-md-auto:first-child:nth-last-child(2),
+    .col-md-auto:first-child:nth-last-child(2) ~ div {
+        width: 50%;
+    }
+
+    /* 3 items */
+    .col-md-auto:first-child:nth-last-child(3),
+    .col-md-auto:first-child:nth-last-child(3) ~ .col-md-auto {
+        width: 33.3333%;
+    }
+
+    /* 4 items */
+    .col-md-auto:first-child:nth-last-child(4),
+    .col-md-auto:first-child:nth-last-child(4) ~ .col-md-auto {
+        width: 25%;
+    }
+
+    /* 5 items */
+    .col-md-auto:first-child:nth-last-child(5),
+    .col-md-auto:first-child:nth-last-child(5) ~ .col-md-auto {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* 1 item */
+    .col-md-auto:first-child:nth-last-child(1) {
+        width: 100%;
+    }
+
+    /* 2 items */
+    .col-md-auto:first-child:nth-last-child(2),
+    .col-md-auto:first-child:nth-last-child(2) ~ div {
+        width: 50%;
+    }
+
+    /* 3 items */
+    .col-md-auto:first-child:nth-last-child(3),
+    .col-md-auto:first-child:nth-last-child(3) ~ .col-md-auto {
+        width: 33.3333%;
+    }
+
+    /* 4 items */
+    .col-md-auto:first-child:nth-last-child(4),
+    .col-md-auto:first-child:nth-last-child(4) ~ .col-md-auto {
+        width: 25%;
+    }
+
+    /* 5 items */
+    .col-md-auto:first-child:nth-last-child(5),
+    .col-md-auto:first-child:nth-last-child(5) ~ .col-md-auto {
+        width: 20%;
+    }
+}
+
+.col-md-auto {
+    padding: 0 15px 0 15px;
+    float: left;
+}
+
+/* Fim - criação de css responsivo para redimensionamento dinâmico de painéis */
+
+
+.mensagem, .mensagemDetalhada {
+    padding: 10px !important;
+    position:fixed !important;
+    text-align:center;
+    display: inline !important;
+     z-index: 9999;
+}
+
+
+/* Estilização do componente de multipla selação caso haja erro no parsley */
+
+.parsley-error + .chosen-container .chosen-choices {
+    border: solid 1px red;
+}
