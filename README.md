@@ -1,3 +1,3 @@
 # exemploApp
 
-teste teste
+Estrutura padrão projetos .NET MVC Voz Digital.
